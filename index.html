@@ -15,36 +15,77 @@
     body {
       background-color: #080C10;
       color: #E2E8F0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { text-shadow: 0 0 20px rgba(239, 68, 68, 0.4), 0 0 40px rgba(239, 68, 68, 0.2); }
+      50% { text-shadow: 0 0 40px rgba(239, 68, 68, 0.9), 0 0 80px rgba(239, 68, 68, 0.5); }
+    }
+
+    @keyframes scanline {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(1000vh); }
+    }
+
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .animate-glow {
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+
+    .scanline {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(239, 68, 68, 0.6), transparent);
+      animation: scanline 8s linear infinite;
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+<body class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative">
 
-  <div class="max-w-xl mx-auto">
+  <!-- Background Ambient Glow Orbs -->
+  <div class="absolute w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none -top-20 -left-20 animate-pulse"></div>
+  <div class="absolute w-96 h-96 bg-rose-600/10 rounded-full blur-3xl pointer-events-none -bottom-20 -right-20 animate-pulse" style="animation-duration: 4s;"></div>
+  
+  <!-- Scanning Laser Line Effect -->
+  <div class="scanline pointer-events-none"></div>
+
+  <!-- Main Animated Content Container -->
+  <div class="max-w-xl mx-auto z-10 animate-float">
+    
     <!-- Red Badge -->
-    <span class="inline-block bg-red-950/80 border border-red-500/30 text-red-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
-      ERROR CODE: 404
+    <span class="inline-block bg-red-950/80 border border-red-500/30 text-red-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6 shadow-lg">
+      ⚠️ ERROR CODE: 404
     </span>
 
-    <!-- Big 404 Heading -->
-    <h1 class="text-6xl md:text-8xl font-black text-red-500 tracking-tight mb-4 drop-shadow-lg">
+    <!-- Big Glowing 404 Heading -->
+    <h1 class="text-7xl md:text-9xl font-black text-red-500 tracking-tight mb-2 animate-glow select-none">
       404
     </h1>
 
-    <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
+    <h2 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-wide">
       ERROR NOT FOUND
     </h2>
 
-    <p class="text-slate-400 text-sm md:text-base mb-8">
+    <p class="text-slate-400 text-sm md:text-base mb-8 max-w-md mx-auto leading-relaxed">
       This website is not owned by us at this time. The requested page or resource could not be found on this server.
     </p>
 
-    <div class="border-t border-slate-800 pt-6">
-      <a href="#" class="text-xs text-slate-500 hover:text-slate-400 transition">
+    <div class="border-t border-slate-800/80 pt-6">
+      <span class="text-xs text-slate-500 tracking-widest uppercase">
         Server Status: Offline / Unclaimed
-      </a>
+      </span>
     </div>
+
   </div>
 
 </body>
