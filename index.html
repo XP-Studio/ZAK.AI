@@ -3,297 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZAK AI Platform</title>
+  <title>404 Not Found</title>
 
-  <!-- Metallic Blue SVG Favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2389CFF0'/%3E%3Cstop offset='50%25' stop-color='%231F618D'/%3E%3Cstop offset='100%25' stop-color='%230B2545'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%2311161B'/%3E%3Cpolygon points='50,15 80,32 80,68 50,85 20,68 20,32' fill='none' stroke='url(%23bg)' stroke-width='4'/%3E%3Cpath d='M32,36 L68,36 L32,64 L68,64' fill='none' stroke='url(%23bg)' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <!-- Red 404 SVG Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A0A0A'/%3E%3Ctext x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-weight='bold' font-size='38' fill='%23EF4444'%3E404%3C/text%3E%3C/svg%3E">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandDark: '#080C10',
-            brandCard: '#11161B',
-            brandBlue: '#1F618D',
-            brandLightBlue: '#89CFF0',
-            brandAccent: '#00B4D8'
-          }
-        }
-      }
-    }
-  </script>
 
   <style>
     body {
       background-color: #080C10;
       color: #E2E8F0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    }
-    .blue-gradient-text {
-      background: linear-gradient(135deg, #89CFF0 0%, #00B4D8 50%, #1F618D 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .glass-card {
-      background: rgba(17, 22, 27, 0.85);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(137, 207, 240, 0.2);
-    }
-    .glass-card:hover {
-      border-color: rgba(137, 207, 240, 0.4);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between">
+<body class="min-h-screen flex flex-col items-center justify-center text-center px-6">
 
-  <!-- HEADER -->
-  <header class="sticky top-0 z-50 glass-card border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      
-      <!-- LOGO -->
-      <a href="#" class="flex items-center gap-3 decoration-none">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-10 h-10">
-          <defs>
-            <linearGradient id="headerBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#89CFF0" />
-              <stop offset="50%" stop-color="#1F618D" />
-              <stop offset="100%" stop-color="#0B2545" />
-            </linearGradient>
-          </defs>
-          <rect width="100" height="100" rx="22" fill="#11161B" />
-          <polygon points="50,15 80,32 80,68 50,85 20,68 20,32" fill="none" stroke="url(#headerBlue)" stroke-width="4" />
-          <path d="M32,36 L68,36 L32,64 L68,64" fill="none" stroke="url(#headerBlue)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <span class="text-2xl font-black blue-gradient-text tracking-wide">ZAK AI</span>
+  <div class="max-w-xl mx-auto">
+    <!-- Red Badge -->
+    <span class="inline-block bg-red-950/80 border border-red-500/30 text-red-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
+      ERROR CODE: 404
+    </span>
+
+    <!-- Big 404 Heading -->
+    <h1 class="text-6xl md:text-8xl font-black text-red-500 tracking-tight mb-4 drop-shadow-lg">
+      404
+    </h1>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
+      ERROR NOT FOUND
+    </h2>
+
+    <p class="text-slate-400 text-sm md:text-base mb-8">
+      This website is not owned by us at this time. The requested page or resource could not be found on this server.
+    </p>
+
+    <div class="border-t border-slate-800 pt-6">
+      <a href="#" class="text-xs text-slate-500 hover:text-slate-400 transition">
+        Server Status: Offline / Unclaimed
       </a>
-
-      <!-- NAVIGATION -->
-      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-        <a href="#analyzer" class="hover:text-brandLightBlue transition">Ultra Sonic Image Analyzer</a>
-        <a href="#url-check" class="hover:text-brandLightBlue transition">Check Suspected URL</a>
-        <a href="#enhancer" class="hover:text-brandLightBlue transition">AI Image Enhancer</a>
-      </nav>
-
-      <!-- CTA BUTTON -->
-      <button onclick="runPrivacyAudit()" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-xs px-5 py-2.5 rounded-full shadow-lg transition">
-        Privacy Audit
-      </button>
-
     </div>
-  </header>
+  </div>
 
-  <!-- HERO SECTION -->
-  <main class="max-w-7xl mx-auto px-6 py-12 flex-grow">
-    
-    <div class="text-center my-8">
-      <span class="inline-block bg-blue-950/80 border border-brandLightBlue/30 text-brandLightBlue text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
-        v4.2 • NEURAL ENGINE ONLINE
-      </span>
-      <h1 class="text-4xl md:text-6xl font-extrabold blue-gradient-text mb-4 tracking-tight">
-        ZAK AI NEURAL VISION SUITE
-      </h1>
-      <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
-        Military-grade pixel noise verification, cryptographic provenance checking, and AI media enhancement tools all in one platform.
-      </p>
-    </div>
-
-    <!-- TOOL 1: ULTRA SONIC AI IMAGE ANALYZER -->
-    <section id="analyzer" class="glass-card rounded-2xl p-6 mb-10">
-      <div class="flex items-center justify-between mb-4">
-        <div>
-          <h2 class="text-xl font-bold text-white flex items-center gap-2">
-            <span class="text-cyan-400">🔍</span> Ultra Sonic AI Image Analyzer
-          </h2>
-          <p class="text-xs text-slate-400 mt-1">Detect synthetic pixel noise spectrum, hardware smoothing, and AI generated frequencies.</p>
-        </div>
-      </div>
-
-      <div class="border-2 border-dashed border-slate-700 hover:border-brandLightBlue/50 rounded-xl p-8 text-center bg-black/40 cursor-pointer transition" onclick="document.getElementById('analyzer-file').click()">
-        <input type="file" id="analyzer-file" accept="image/*" class="hidden" onchange="processAnalyzer(event)" />
-        <div class="text-4xl mb-2">📁</div>
-        <p class="text-sm font-semibold text-slate-200">Upload Image to Scan Neural Spectrum</p>
-        <p class="text-xs text-slate-500 mt-1">Supports PNG, JPG, WEBP up to 25MB</p>
-      </div>
-
-      <div id="analyzer-result" class="hidden mt-6 bg-slate-900/90 border border-cyan-500/30 rounded-xl p-4">
-        <div class="flex justify-between items-center mb-2">
-          <span class="text-xs text-slate-400">Analysis Status: <strong id="analyzer-status" class="text-cyan-400">Scanning...</strong></span>
-          <span id="analyzer-percent" class="text-xs font-bold text-brandLightBlue">0%</span>
-        </div>
-        <div class="w-full bg-slate-800 rounded-full h-2 mb-4 overflow-hidden">
-          <div id="analyzer-bar" class="bg-cyan-400 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
-        </div>
-        <div id="analyzer-details" class="hidden text-sm text-slate-300 bg-black/50 p-3 rounded-lg"></div>
-      </div>
-    </section>
-
-    <!-- TOOL 2: CHECK SUSPECTED URL -->
-    <section id="url-check" class="glass-card rounded-2xl p-6 mb-10">
-      <div class="mb-4">
-        <h2 class="text-xl font-bold text-white flex items-center gap-2">
-          <span class="text-cyan-400">🛡️</span> Check Suspected URL
-        </h2>
-        <p class="text-xs text-slate-400 mt-1">Instant phishing, malware, and SSL cryptographic validation.</p>
-      </div>
-
-      <div class="flex gap-3">
-        <input type="url" id="url-input" placeholder="https://example-suspected-link.com" class="flex-grow bg-black/60 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-400 text-white" />
-        <button onclick="scanUrl()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-6 py-3 rounded-xl transition">
-          Check URL
-        </button>
-      </div>
-
-      <div id="url-result" class="hidden mt-4 p-4 rounded-xl bg-slate-900 border border-slate-800 text-sm"></div>
-    </section>
-
-    <!-- TOOL 3: AI IMAGE / 4K DSLR ENHANCER -->
-    <section id="enhancer" class="glass-card rounded-2xl p-6">
-      <div class="flex items-center justify-between mb-4">
-        <div>
-          <h2 class="text-xl font-bold text-white flex items-center gap-2">
-            <span class="text-cyan-400">✨</span> AI 4K DSLR Enhancer
-          </h2>
-          <p class="text-xs text-slate-400 mt-1">Upscale images & videos to Ultra HD 4K with neural color grading.</p>
-        </div>
-        <span class="bg-cyan-500/10 border border-cyan-400/30 text-cyan-400 text-xs px-3 py-1 rounded-full font-semibold">4K ULTRA HD</span>
-      </div>
-
-      <div class="border-2 border-dashed border-slate-700 hover:border-brandLightBlue/50 rounded-xl p-8 text-center bg-black/40 cursor-pointer transition" onclick="document.getElementById('enhancer-file').click()">
-        <input type="file" id="enhancer-file" accept="image/*,video/*" class="hidden" onchange="processEnhancer(event)" />
-        <div class="text-4xl mb-2">📸</div>
-        <p class="text-sm font-semibold text-slate-200">Click or Drag Image/Video to Enhance</p>
-        <p class="text-xs text-slate-500 mt-1">Auto-upscale to 4K resolution (60FPS support)</p>
-      </div>
-
-      <div id="enhancer-output" class="hidden mt-6 text-center">
-        <div class="relative inline-block max-w-full">
-          <img id="enhancer-preview" src="" class="max-w-full max-h-96 rounded-xl border border-cyan-500/50 shadow-lg mx-auto" />
-          <div id="enhancer-loader" class="absolute inset-0 bg-black/70 rounded-xl flex flex-col items-center justify-center">
-            <div class="w-8 h-8 border-4 border-slate-800 border-t-cyan-400 rounded-full animate-spin"></div>
-            <p class="text-xs text-cyan-400 font-semibold mt-3">Enhancing to 4K DSLR Quality...</p>
-          </div>
-        </div>
-        <div class="mt-4">
-          <a id="enhancer-download" href="#" download="enhanced-zak-ai-4k" class="inline-block bg-cyan-400 hover:bg-cyan-300 text-black font-bold text-sm px-6 py-2.5 rounded-lg transition">
-            Download 4K Media
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="border-t border-slate-900 bg-black/80 py-6 text-center text-xs text-slate-500">
-    <p>© 2026 ZAK AI Platform. All rights reserved.</p>
-  </footer>
-
-  <!-- INTERACTIVE LOGIC -->
-  <script>
-    // 1. Privacy Audit Simulation
-    function runPrivacyAudit() {
-      alert("ZAK AI Privacy Audit:\n\n• Connection: Encrypted (SSL)\n• Zero Data Storage: Active\n• Browser Sandboxing: Secure");
-    }
-
-    // 2. Smart AI Image Analyzer Logic (Mobile Camera / Filter Fix)
-    function processAnalyzer(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-
-      const resDiv = document.getElementById('analyzer-result');
-      const bar = document.getElementById('analyzer-bar');
-      const percent = document.getElementById('analyzer-percent');
-      const status = document.getElementById('analyzer-status');
-      const details = document.getElementById('analyzer-details');
-
-      resDiv.classList.remove('hidden');
-      details.classList.add('hidden');
-      bar.style.width = '0%';
-      percent.innerText = '0%';
-      status.innerText = 'Analyzing Noise Spectrum & EXIF Data...';
-
-      let progress = 0;
-      const interval = setInterval(() => {
-        progress += 25;
-        bar.style.width = progress + '%';
-        percent.innerText = progress + '%';
-        
-        if (progress >= 100) {
-          clearInterval(interval);
-          status.innerText = 'Analysis Complete!';
-          details.classList.remove('hidden');
-
-          details.innerHTML = `
-            <div class="space-y-2">
-              <div class="flex justify-between items-center border-b border-slate-800 pb-2">
-                <span>📷 <strong>Authenticity:</strong></span>
-                <span class="text-green-400 font-bold">Real Camera Capture</span>
-              </div>
-              <div class="flex justify-between items-center border-b border-slate-800 pb-2 text-xs">
-                <span>🤖 <strong>Synthetic AI Generation:</strong></span>
-                <span class="text-slate-300 font-semibold">0.0% (Not Synthetic)</span>
-              </div>
-              <div class="flex justify-between items-center text-xs">
-                <span>✨ <strong>Mobile AI Processing / Smoothing:</strong></span>
-                <span class="text-amber-400 font-semibold">Detected (Hardware HDR / Beauty Mode)</span>
-              </div>
-              <p class="text-[11px] text-slate-400 mt-2 bg-black/40 p-2 rounded">
-                <strong>Note:</strong> Mobile camera post-processing detected. Sensor grain confirms this is a physical camera capture, not an AI generated synthetic image.
-              </p>
-            </div>
-          `;
-        }
-      }, 300);
-    }
-
-    // 3. Check Suspected URL Simulation
-    function scanUrl() {
-      const input = document.getElementById('url-input').value;
-      const res = document.getElementById('url-result');
-      if (!input) {
-        alert("Please enter a valid URL");
-        return;
-      }
-      res.classList.remove('hidden');
-      res.innerHTML = `<span class="text-cyan-400 font-semibold">Scanning "${input}"...</span>`;
-      
-      setTimeout(() => {
-        res.innerHTML = `
-          <div class="flex items-center gap-2 text-green-400 font-bold">
-            <span>✓ SAFE URL</span>
-          </div>
-          <p class="text-xs text-slate-400 mt-1">No phishing signals or malware signatures reported across security databases.</p>
-        `;
-      }, 1200);
-    }
-
-    // 4. AI 4K DSLR Enhancer Simulation
-    function processEnhancer(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-
-      const output = document.getElementById('enhancer-output');
-      const preview = document.getElementById('enhancer-preview');
-      const loader = document.getElementById('enhancer-loader');
-      const download = document.getElementById('enhancer-download');
-
-      output.classList.remove('hidden');
-      loader.classList.remove('hidden');
-
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        preview.src = e.target.result;
-        download.href = e.target.result;
-        setTimeout(() => {
-          loader.classList.add('hidden');
-          preview.style.filter = 'contrast(1.08) saturate(1.1) brightness(1.02)';
-        }, 1800);
-      };
-      reader.readAsDataURL(file);
-    }
-  </script>
 </body>
 </html>
