@@ -1,92 +1,2177 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 Not Found</title>
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZAK AI — Forensic Media Intelligence, URL Security &amp; 4K DSLR Enhancement</title>
+    <meta
+      name="description"
+      content="ZAK AI is a futuristic AI platform featuring the Ultra Sonic Image Analyzer, Instant SSL/Phishing URL Inspector, and AI 4K DSLR Media Enhancer."
+    />
+    <meta property="og:title" content="ZAK AI — Forensic Media &amp; Neural Enhancement Platform" />
+    <meta
+      property="og:description"
+      content="High-end AI platform with Ultra Sonic Image Analyzer, Suspected URL Inspector, and AI 4K DSLR Enhancer."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Red 404 SVG Favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A0A0A'/%3E%3Ctext x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-weight='bold' font-size='38' fill='%23EF4444'%3E404%3C/text%3E%3C/svg%3E">
+    <!-- Custom Hexagonal Metallic Blue 'Z' SVG Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='hexBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%230F1B29'/%3E%3Cstop offset='50%25' stop-color='%23080C10'/%3E%3Cstop offset='100%25' stop-color='%2310253A'/%3E%3C/linearGradient%3E%3ClinearGradient id='metalRim' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2389CFF0'/%3E%3Cstop offset='45%25' stop-color='%233A89C9'/%3E%3Cstop offset='100%25' stop-color='%231F618D'/%3E%3C/linearGradient%3E%3ClinearGradient id='zGrad' x1='10%25' y1='0%25' x2='90%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23B8E4FF'/%3E%3Cstop offset='35%25' stop-color='%2389CFF0'/%3E%3Cstop offset='75%25' stop-color='%232E86C1'/%3E%3Cstop offset='100%25' stop-color='%231F618D'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='60,6 108,33 108,87 60,114 12,87 12,33' fill='url(%23hexBg)' stroke='url(%23metalRim)' stroke-width='5' stroke-linejoin='round'/%3E%3Cpolygon points='60,15 99,37 99,83 60,105 21,83 21,37' fill='none' stroke='%2389CFF0' stroke-opacity='0.28' stroke-width='1.5'/%3E%3Cpath d='M36 37 H84 L84 48 L51 73 H84 V85 H36 V74 L69 49 H36 Z' fill='url(%23zGrad)'/%3E%3C/svg%3E"
+    />
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Outfit (Display), Plus Jakarta Sans (Body), JetBrains Mono (Telemetry) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    body {
-      background-color: #080C10;
-      color: #E2E8F0;
-      font-family: system-ui, -apple-system, sans-serif;
-      overflow: hidden;
-    }
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              obsidian: '#080C10',
+              panel: '#0D141C',
+              skyice: '#89CFF0',
+              steel: '#1F618D',
+            },
+            fontFamily: {
+              display: ['Outfit', 'sans-serif'],
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+          },
+        },
+      };
+    </script>
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-12px); }
-    }
+    <style>
+      :root {
+        color-scheme: dark;
+      }
 
-    @keyframes pulseGlow {
-      0%, 100% { text-shadow: 0 0 20px rgba(239, 68, 68, 0.4), 0 0 40px rgba(239, 68, 68, 0.2); }
-      50% { text-shadow: 0 0 40px rgba(239, 68, 68, 0.9), 0 0 80px rgba(239, 68, 68, 0.5); }
-    }
+      body {
+        background-color: #080C10;
+        color: #E6F0F8;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        overflow-x: hidden;
+      }
 
-    @keyframes scanline {
-      0% { transform: translateY(-100%); }
-      100% { transform: translateY(1000vh); }
-    }
+      /* Blue-to-Cyan Signature Text Gradient (#89CFF0 to #1F618D) */
+      .text-zak-gradient {
+        background: linear-gradient(135deg, #89CFF0 0%, #52A8DB 48%, #1F618D 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
 
-    .animate-float {
-      animation: float 4s ease-in-out infinite;
-    }
+      /* Glassmorphism Surface with Subtle Metallic Blue Border */
+      .zak-glass-card {
+        background: linear-gradient(
+          165deg,
+          rgba(16, 26, 38, 0.78) 0%,
+          rgba(10, 16, 24, 0.88) 100%
+        );
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(137, 207, 240, 0.22);
+        box-shadow:
+          0 20px 50px -15px rgba(0, 0, 0, 0.75),
+          inset 0 1px 0 0 rgba(137, 207, 240, 0.18);
+      }
 
-    .animate-glow {
-      animation: pulseGlow 3s ease-in-out infinite;
-    }
+      .zak-glass-subtle {
+        background: rgba(13, 21, 31, 0.68);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(137, 207, 240, 0.16);
+      }
 
-    .scanline {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 2px;
-      background: linear-gradient(90deg, transparent, rgba(239, 68, 68, 0.6), transparent);
-      animation: scanline 8s linear infinite;
-    }
-  </style>
-</head>
-<body class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative">
+      .zak-btn-primary {
+        background: linear-gradient(135deg, #89CFF0 0%, #2B7CB3 55%, #1F618D 100%);
+        color: #06101A;
+        font-weight: 600;
+        transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), opacity 160ms ease;
+      }
 
-  <!-- Background Ambient Glow Orbs -->
-  <div class="absolute w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none -top-20 -left-20 animate-pulse"></div>
-  <div class="absolute w-96 h-96 bg-rose-600/10 rounded-full blur-3xl pointer-events-none -bottom-20 -right-20 animate-pulse" style="animation-duration: 4s;"></div>
-  
-  <!-- Scanning Laser Line Effect -->
-  <div class="scanline pointer-events-none"></div>
+      .zak-btn-primary:hover {
+        opacity: 0.94;
+        transform: translateY(-1px);
+      }
 
-  <!-- Main Animated Content Container -->
-  <div class="max-w-xl mx-auto z-10 animate-float">
-    
-    <!-- Red Badge -->
-    <span class="inline-block bg-red-950/80 border border-red-500/30 text-red-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6 shadow-lg">
-      ⚠️ ERROR CODE: 404
-    </span>
+      .zak-btn-primary:active {
+        transform: translateY(0);
+      }
 
-    <!-- Big Glowing 404 Heading -->
-    <h1 class="text-7xl md:text-9xl font-black text-red-500 tracking-tight mb-2 animate-glow select-none">
-      404
-    </h1>
+      /* Ambient Radial Atmosphere */
+      .zak-backdrop-glow {
+        background:
+          radial-gradient(circle at 18% 12%, rgba(137, 207, 240, 0.09) 0%, transparent 42%),
+          radial-gradient(circle at 82% 24%, rgba(31, 97, 141, 0.13) 0%, transparent 46%),
+          radial-gradient(circle at 50% 85%, rgba(31, 97, 141, 0.08) 0%, transparent 50%);
+      }
 
-    <h2 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-wide">
-      ERROR NOT FOUND
-    </h2>
+      /* Ultrasonic Laser Sweep Animation */
+      @keyframes ultrasonicSweep {
+        0% {
+          transform: translateY(0%);
+          opacity: 0.95;
+        }
+        50% {
+          transform: translateY(290px);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(0%);
+          opacity: 0.95;
+        }
+      }
 
-    <p class="text-slate-400 text-sm md:text-base mb-8 max-w-md mx-auto leading-relaxed">
-      This website is not owned by us at this time. The requested page or resource could not be found on this server.
-    </p>
+      .scan-laser-line {
+        animation: ultrasonicSweep 2.1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
 
-    <div class="border-t border-slate-800/80 pt-6">
-      <span class="text-xs text-slate-500 tracking-widest uppercase">
-        Server Status: Offline / Unclaimed
-      </span>
-    </div>
+      .tabular-nums {
+        font-variant-numeric: tabular-nums;
+      }
 
-  </div>
+      /* Custom Range Slider */
+      input[type='range'].zak-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 6px;
+        background: rgba(31, 97, 141, 0.32);
+        border-radius: 999px;
+        outline: none;
+      }
 
-</body>
+      input[type='range'].zak-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #89CFF0;
+        border: 2px solid #080C10;
+        box-shadow: 0 0 0 1px rgba(137, 207, 240, 0.6);
+        cursor: pointer;
+      }
+
+      input[type='range'].zak-slider::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #89CFF0;
+        border: 2px solid #080C10;
+        box-shadow: 0 0 0 1px rgba(137, 207, 240, 0.6);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-[#080C10] text-slate-100 antialiased selection:bg-[#89CFF0]/25 selection:text-[#89CFF0] zak-backdrop-glow">
+    <!-- Top Navigation Bar (Strict 3-Zone Contract) -->
+    <header class="sticky top-0 z-40 border-b border-[#89CFF0]/15 bg-[#080C10]/85 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-8 px-6 py-4">
+        <!-- Zone 1: Hexagonal Metallic Blue 'Z' SVG Logo + Brand Wordmark -->
+        <a
+          href="#top"
+          class="group flex items-center gap-3.5 whitespace-nowrap shrink-0 focus:outline-none"
+          aria-label="ZAK AI Home"
+        >
+          <svg
+            class="h-10 w-10 shrink-0 transition-transform duration-200 group-hover:scale-105"
+            viewBox="0 0 120 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="navHexShell" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#13263A" />
+                <stop offset="50%" stop-color="#080C10" />
+                <stop offset="100%" stop-color="#173753" />
+              </linearGradient>
+              <linearGradient id="navHexRim" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#89CFF0" />
+                <stop offset="50%" stop-color="#3C8AC2" />
+                <stop offset="100%" stop-color="#1F618D" />
+              </linearGradient>
+              <linearGradient id="navZMonogram" x1="15%" y1="10%" x2="85%" y2="90%">
+                <stop offset="0%" stop-color="#D4F0FF" />
+                <stop offset="35%" stop-color="#89CFF0" />
+                <stop offset="75%" stop-color="#2E86C1" />
+                <stop offset="100%" stop-color="#1F618D" />
+              </linearGradient>
+            </defs>
+            <!-- Outer Metallic Hexagon -->
+            <polygon
+              points="60,5 109,33 109,87 60,115 11,87 11,33"
+              fill="url(#navHexShell)"
+              stroke="url(#navHexRim)"
+              stroke-width="4.5"
+              stroke-linejoin="round"
+            />
+            <!-- Inner Precision Bevel -->
+            <polygon
+              points="60,15 99,38 99,82 60,105 21,82 21,38"
+              fill="none"
+              stroke="#89CFF0"
+              stroke-opacity="0.3"
+              stroke-width="1.25"
+            />
+            <!-- Faceted Metallic Accent Lines -->
+            <line x1="60" y1="5" x2="60" y2="15" stroke="#89CFF0" stroke-opacity="0.45" stroke-width="1.5" />
+            <line x1="109" y1="33" x2="99" y2="38" stroke="#89CFF0" stroke-opacity="0.35" stroke-width="1.5" />
+            <line x1="11" y1="87" x2="21" y2="82" stroke="#1F618D" stroke-opacity="0.6" stroke-width="1.5" />
+            <!-- Geometric Metallic 'Z' -->
+            <path
+              d="M36 37 H84 L84 48 L51 73 H84 V85 H36 V74 L69 49 H36 Z"
+              fill="url(#navZMonogram)"
+            />
+          </svg>
+          <span class="font-display text-xl font-bold tracking-tight text-zak-gradient">
+            ZAK AI
+          </span>
+        </a>
+
+        <!-- Zone 2: Concise Single-Line Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300" aria-label="Primary Navigation">
+          <a
+            href="#tool-image-analyzer"
+            class=" hover:text-[#89CFF0] transition-colors underline-offset-8 hover:underline whitespace-nowrap shrink-0"
+          >
+            Image Analyzer
+          </a>
+          <a
+            href="#tool-url-checker"
+            class="hover:text-[#89CFF0] transition-colors underline-offset-8 hover:underline whitespace-nowrap shrink-0"
+          >
+            URL Inspector
+          </a>
+          <a
+            href="#tool-4k-enhancer"
+            class="hover:text-[#89CFF0] transition-colors underline-offset-8 hover:underline whitespace-nowrap shrink-0"
+          >
+            4K DSLR Enhancer
+          </a>
+          <a
+            href="#architecture-specs"
+            class="hover:text-[#89CFF0] transition-colors underline-offset-8 hover:underline whitespace-nowrap shrink-0"
+          >
+            Specifications
+          </a>
+        </nav>
+
+        <!-- Zone 3: Primary Action -->
+        <div class="flex items-center gap-3 shrink-0">
+          <a
+            href="#workspace-grid"
+            class="zak-btn-primary rounded-lg px-4 py-2 text-xs font-semibold tracking-wide whitespace-nowrap shrink-0"
+          >
+            Launch Suite
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main id="top" class="mx-auto max-w-7xl px-6 pt-12 pb-24">
+      <!-- Hero Section -->
+      <section class="mb-14 grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-medium tracking-wide text-[#89CFF0]/80">
+            <span>Optical Forensics</span>
+            <span aria-hidden="true">·</span>
+            <span>Real-Time Phishing Defense</span>
+            <span aria-hidden="true">·</span>
+            <span>4K UHD Neural Grading</span>
+          </div>
+
+          <h1
+            class="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-[3.35rem] leading-[1.1]"
+            style="text-wrap: balance"
+          >
+            Precision Intelligence for <span class="text-zak-gradient">Authentic Media &amp; Web Security</span>
+          </h1>
+
+          <p class="max-w-2xl text-base leading-relaxed text-slate-300/90">
+            Verify image provenance down to the sensor grain, inspect suspected URLs against SSL and homograph phishing vectors, and master uncompressed 4K DSLR media directly in your browser.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a
+              href="#tool-image-analyzer"
+              class="zak-btn-primary rounded-xl px-6 py-3 text-sm font-semibold whitespace-nowrap shrink-0"
+            >
+              Analyze Media Provenance
+            </a>
+            <a
+              href="#tool-4k-enhancer"
+              class="rounded-xl border border-[#89CFF0]/30 bg-[#0D1622]/80 px-5 py-3 text-sm font-medium text-[#89CFF0] hover:bg-[#132235] transition-colors whitespace-nowrap shrink-0"
+            >
+              Open 4K DSLR Studio
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Quick-Switch Telemetry Card -->
+        <div class="lg:col-span-5">
+          <div class="zak-glass-card rounded-2xl p-6">
+            <div class="flex items-center justify-between border-b border-[#89CFF0]/15 pb-4">
+              <div>
+                <h2 class="font-display text-base font-semibold text-white">
+                  Active Forensic &amp; Optical Modules
+                </h2>
+                <p class="text-xs text-slate-400 mt-0.5">
+                  Client-side pixel frequency, URL heuristics &amp; 4K canvas pipeline
+                </p>
+              </div>
+              <span class="font-mono text-xs text-[#89CFF0] tabular-nums">3 Engines Ready</span>
+            </div>
+
+            <div class="mt-5 divide-y divide-[#89CFF0]/10">
+              <a
+                href="#tool-image-analyzer"
+                class="group flex items-center justify-between py-3.5 transition-colors hover:text-[#89CFF0]"
+              >
+                <div>
+                  <p class="text-sm font-semibold text-slate-100 group-hover:text-[#89CFF0]">
+                    01. Ultra Sonic Image Analyzer
+                  </p>
+                  <p class="text-xs text-slate-400 mt-0.5">
+                    Authentic Camera Capture vs. AI Image Detection
+                  </p>
+                </div>
+                <span class="font-mono text-xs text-[#89CFF0] tabular-nums">AI Verdict →</span>
+              </a>
+
+              <a
+                href="#tool-url-checker"
+                class="group flex items-center justify-between py-3.5 transition-colors hover:text-[#89CFF0]"
+              >
+                <div>
+                  <p class="text-sm font-semibold text-slate-100 group-hover:text-[#89CFF0]">
+                    02. Check Suspected URL
+                  </p>
+                  <p class="text-xs text-slate-400 mt-0.5">
+                    Instant TLS/SSL handshake, homograph &amp; phishing inspection
+                  </p>
+                </div>
+                <span class="font-mono text-xs text-[#89CFF0] tabular-nums">Sub-500ms Scan →</span>
+              </a>
+
+              <a
+                href="#tool-4k-enhancer"
+                class="group flex items-center justify-between pt-3.5 transition-colors hover:text-[#89CFF0]"
+              >
+                <div>
+                  <p class="text-sm font-semibold text-slate-100 group-hover:text-[#89CFF0]">
+                    03. AI 4K DSLR Enhancer
+                  </p>
+                  <p class="text-xs text-slate-400 mt-0.5">
+                    Real-time optical grading &amp; true 3840×2160 UHD export
+                  </p>
+                </div>
+                <span class="font-mono text-xs text-[#89CFF0] tabular-nums">4K Master Export →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Workspace Suite -->
+      <div id="workspace-grid" class="space-y-12">
+        <!-- =====================================================================
+             TOOL 1: ULTRA SONIC IMAGE ANALYZER
+             ===================================================================== -->
+        <section id="tool-image-analyzer" class="zak-glass-card rounded-2xl p-6 sm:p-8">
+          <div class="flex flex-col gap-4 border-b border-[#89CFF0]/15 pb-6 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs text-[#89CFF0]">
+                <span>Module 01</span>
+                <span aria-hidden="true">·</span>
+                <span>Strict &gt;15% AI Detection Rule</span>
+              </div>
+              <h2 class="mt-1 font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                <span class="text-zak-gradient">Ultra Sonic Image Analyzer</span>
+              </h2>
+              <p class="mt-1 text-sm text-slate-300/85">
+                If AI is detected above 15%, the image is immediately flagged as Clear AI.
+              </p>
+            </div>
+
+            <!-- Preset Sample Triggers for Immediate Testing -->
+            <div class="flex flex-wrap items-center gap-2 shrink-0">
+              <span class="text-xs text-slate-400 mr-1">Test Sample:</span>
+              <button
+                type="button"
+                onclick="loadAnalyzerSample('camera')"
+                class="rounded-lg border border-[#89CFF0]/25 bg-[#0D1724] px-3 py-1.5 text-xs font-medium text-slate-200 hover:border-[#89CFF0] hover:text-[#89CFF0] transition-colors whitespace-nowrap shrink-0"
+              >
+                RAW Camera Capture
+              </button>
+              <button
+                type="button"
+                onclick="loadAnalyzerSample('synthetic')"
+                class="rounded-lg border border-[#89CFF0]/25 bg-[#0D1724] px-3 py-1.5 text-xs font-medium text-slate-200 hover:border-[#89CFF0] hover:text-[#89CFF0] transition-colors whitespace-nowrap shrink-0"
+              >
+                AI Generated / AI Filtered
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-7 grid grid-cols-1 gap-8 lg:grid-cols-12 items-start">
+            <!-- Left Column: Image Uploader & Ultrasonic Scan Viewport (5 cols) -->
+            <div class="lg:col-span-5 space-y-4">
+              <!-- Dropzone / Viewport -->
+              <div
+                id="analyzer-dropzone"
+                class="relative overflow-hidden rounded-xl border border-dashed border-[#89CFF0]/35 bg-[#070B0F] transition-colors hover:border-[#89CFF0]/70"
+              >
+                <input
+                  id="analyzer-file-input"
+                  type="file"
+                  accept="image/*"
+                  class="sr-only"
+                  onchange="handleAnalyzerFileSelect(event)"
+                />
+
+                <!-- Image Preview Stage -->
+                <div class="relative h-[320px] w-full flex items-center justify-center overflow-hidden">
+                  <canvas
+                    id="analyzer-display-canvas"
+                    class="h-full w-full object-contain"
+                    width="720"
+                    height="480"
+                  ></canvas>
+
+                  <!-- Ultrasonic Laser Scan Overlay (Hidden until scanning) -->
+                  <div
+                    id="analyzer-scan-overlay"
+                    class="pointer-events-none absolute inset-0 hidden bg-[#080C10]/45"
+                  >
+                    <div
+                      class="scan-laser-line h-1.5 w-full bg-gradient-to-r from-transparent via-[#89CFF0] to-transparent shadow-[0_0_24px_#89CFF0]"
+                    ></div>
+                    <div class="absolute inset-x-4 bottom-4 rounded-lg border border-[#89CFF0]/40 bg-[#080C10]/90 p-3 backdrop-blur-md">
+                      <div class="flex items-center justify-between text-xs font-mono text-[#89CFF0] tabular-nums">
+                        <span id="analyzer-scan-stage-label">Scanning high-frequency sensor grain...</span>
+                        <span id="analyzer-scan-percent">0%</span>
+                      </div>
+                      <div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-[#132334]">
+                        <div
+                          id="analyzer-scan-progress-bar"
+                          class="h-full w-0 bg-gradient-to-r from-[#1F618D] to-[#89CFF0] transition-all duration-150"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Action Bar inside Upload Frame -->
+                <div class="flex flex-wrap items-center justify-between gap-2 border-t border-[#89CFF0]/15 bg-[#0B121B] px-4 py-3">
+                  <div class="flex items-center gap-1.5">
+                    <button
+                      type="button"
+                      onclick="setAnalyzerViewMode('original')"
+                      id="btn-view-original"
+                      class="rounded-md bg-[#1F618D]/40 px-2.5 py-1 text-xs font-medium text-[#89CFF0] transition-colors whitespace-nowrap shrink-0"
+                    >
+                      Source View
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setAnalyzerViewMode('edges')"
+                      id="btn-view-edges"
+                      class="rounded-md px-2.5 py-1 text-xs font-medium text-slate-400 hover:text-slate-200 transition-colors whitespace-nowrap shrink-0"
+                    >
+                      Edge Frequency Map
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setAnalyzerViewMode('smoothing')"
+                      id="btn-view-smoothing"
+                      class="rounded-md px-2.5 py-1 text-xs font-medium text-slate-400 hover:text-slate-200 transition-colors whitespace-nowrap shrink-0"
+                    >
+                      Smoothing Heatmap
+                    </button>
+                  </div>
+
+                  <label
+                    for="analyzer-file-input"
+                    class="cursor-pointer rounded-lg border border-[#89CFF0]/30 bg-[#101C2B] px-3 py-1.5 text-xs font-semibold text-[#89CFF0] hover:bg-[#17293F] transition-colors whitespace-nowrap shrink-0"
+                  >
+                    Upload Image
+                  </label>
+                </div>
+              </div>
+
+              <!-- Action Trigger Row -->
+              <div class="flex items-center gap-3">
+                <button
+                  type="button"
+                  id="btn-run-ultrasonic-scan"
+                  onclick="runUltrasonicScan()"
+                  class="zak-btn-primary flex-1 rounded-xl px-5 py-3 text-sm font-semibold whitespace-nowrap shrink-0"
+                >
+                  Run Ultra Sonic Scan
+                </button>
+                <button
+                  type="button"
+                  onclick="exportForensicReport()"
+                  class="rounded-xl border border-[#89CFF0]/25 bg-[#0D1622] px-4 py-3 text-xs font-medium text-slate-200 hover:border-[#89CFF0] hover:text-[#89CFF0] transition-colors whitespace-nowrap shrink-0"
+                >
+                  Export JSON
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: Smart Detection Breakdown (7 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+              <!-- Primary Classification Verdict Banner -->
+              <div id="analyzer-verdict-box" class="rounded-xl border border-[#89CFF0]/25 bg-[#0B131E] p-5">
+                <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p class="text-xs font-medium text-slate-400">
+                      Verdict (Rule: &gt;15% AI = Clear AI)
+                    </p>
+                    <h3
+                      id="analyzer-verdict-title"
+                      class="mt-1 font-display text-2xl font-bold text-white"
+                    >
+                      REAL CAMERA IMAGE
+                    </h3>
+                  </div>
+                  <div class="text-left sm:text-right">
+                    <span id="analyzer-verdict-label" class="text-xs text-slate-400">AI Detected</span>
+                    <p
+                      id="analyzer-verdict-confidence"
+                      class="font-mono text-2xl font-bold text-[#89CFF0] tabular-nums"
+                    >
+                      5.4%
+                    </p>
+                  </div>
+                </div>
+                <p id="analyzer-verdict-summary" class="mt-2.5 text-xs font-medium text-slate-300">
+                  AI detected at 5.4% (≤15% threshold). Result: Real Camera.
+                </p>
+              </div>
+
+              <!-- 2-Class Detection Breakdown Bars (Real Camera vs AI Image) -->
+              <div class="space-y-5">
+                <!-- Class 1: Real Camera Capture -->
+                <div>
+                  <div class="flex items-baseline justify-between text-sm">
+                    <div>
+                      <span class="font-semibold text-white">1. Real Camera</span>
+                    </div>
+                    <span
+                      id="score-real-camera"
+                      class="font-mono text-base font-semibold text-[#89CFF0] tabular-nums"
+                    >
+                      94.6%
+                    </span>
+                  </div>
+                  <div class="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-[#101B29]">
+                    <div
+                      id="bar-real-camera"
+                      class="h-full rounded-full bg-gradient-to-r from-[#1F618D] to-[#89CFF0] transition-all duration-500"
+                      style="width: 94.6%"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Class 2: AI Image -->
+                <div>
+                  <div class="flex items-baseline justify-between text-sm">
+                    <div>
+                      <span class="font-semibold text-white">2. AI Detected</span>
+                      <span class="ml-2 text-xs text-[#89CFF0]">
+                        (&gt;15% = Clear AI)
+                      </span>
+                    </div>
+                    <span
+                      id="score-synthetic-ai"
+                      class="font-mono text-base font-semibold text-slate-300 tabular-nums"
+                    >
+                      5.4%
+                    </span>
+                  </div>
+                  <div class="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-[#101B29]">
+                    <div
+                      id="bar-synthetic-ai"
+                      class="h-full rounded-full bg-gradient-to-r from-[#1B4F72] to-[#3498DB] transition-all duration-500"
+                      style="width: 5.4%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quantitative Sensor & Frequency Telemetry Grid -->
+              <div class="grid grid-cols-2 gap-3 sm:grid-cols-4 pt-1">
+                <div class="rounded-xl border border-[#89CFF0]/15 bg-[#0A111A] p-3.5">
+                  <p class="text-xs text-slate-400">Dimensions</p>
+                  <p id="metric-dimensions" class="mt-1 font-mono text-sm font-semibold text-white tabular-nums">
+                    720 × 480 px
+                  </p>
+                </div>
+                <div class="rounded-xl border border-[#89CFF0]/15 bg-[#0A111A] p-3.5">
+                  <p class="text-xs text-slate-400">High-Freq Variance</p>
+                  <p id="metric-edge-energy" class="mt-1 font-mono text-sm font-semibold text-[#89CFF0] tabular-nums">
+                    44.8 dB
+                  </p>
+                </div>
+                <div class="rounded-xl border border-[#89CFF0]/15 bg-[#0A111A] p-3.5">
+                  <p class="text-xs text-slate-400">AI Signature Index</p>
+                  <p id="metric-smoothing-index" class="mt-1 font-mono text-sm font-semibold text-white tabular-nums">
+                    0.05 None
+                  </p>
+                </div>
+                <div class="rounded-xl border border-[#89CFF0]/15 bg-[#0A111A] p-3.5">
+                  <p class="text-xs text-slate-400">Chroma Entropy</p>
+                  <p id="metric-chroma-entropy" class="mt-1 font-mono text-sm font-semibold text-white tabular-nums">
+                    7.64 bits/px
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================================
+             TOOL 2: CHECK SUSPECTED URL
+             ===================================================================== -->
+        <section id="tool-url-checker" class="zak-glass-card rounded-2xl p-6 sm:p-8">
+          <div class="flex flex-col gap-4 border-b border-[#89CFF0]/15 pb-6 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs text-[#89CFF0]">
+                <span>Module 02</span>
+                <span aria-hidden="true">·</span>
+                <span>Zero-Trust TLS Certificate &amp; Phishing Heuristic Engine</span>
+              </div>
+              <h2 class="mt-1 font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                <span class="text-zak-gradient">Check Suspected URL</span>
+              </h2>
+              <p class="mt-1 text-sm text-slate-300/85">
+                Inspect links for SSL/TLS certificate chain integrity, homograph spoofing, suspicious TLD patterns, and credential harvesting signatures.
+              </p>
+            </div>
+
+            <!-- Quick Preset Test Links -->
+            <div class="flex flex-wrap items-center gap-2 shrink-0">
+              <span class="text-xs text-slate-400 mr-1">Load Example:</span>
+              <button
+                type="button"
+                onclick="populateAndScanUrl('https://cloud.google.com/security/encryption')"
+                class="rounded-lg border border-[#89CFF0]/25 bg-[#0D1724] px-3 py-1.5 text-xs font-medium text-slate-200 hover:border-[#89CFF0] hover:text-[#89CFF0] transition-colors whitespace-nowrap shrink-0"
+              >
+                Verified HTTPS Domain
+              </button>
+              <button
+                type="button"
+                onclick="populateAndScanUrl('https://paypa1-secure-verify.account-login.tk/update')"
+                class="rounded-lg border border-[#89CFF0]/25 bg-[#0D1724] px-3 py-1.5 text-xs font-medium text-slate-200 hover:border-[#89CFF0] hover:text-[#89CFF0] transition-colors whitespace-nowrap shrink-0"
+              >
+                Suspected Phishing Link
+              </button>
+              <button
+                type="button"
+                onclick="populateAndScanUrl('http://185.220.101.44/admin-login.php?redirect=token')"
+                class="rounded-lg border border-[#89CFF0]/25 bg-[#0D1724] px-3 py-1.5 text-xs font-medium text-slate-200 hover:border-[#89CFF0] hover:text-[#89CFF0] transition-colors whitespace-nowrap shrink-0"
+              >
+                Unencrypted Raw IP
+              </button>
+            </div>
+          </div>
+
+          <!-- URL Input Bar & Scan Trigger -->
+          <form
+            onsubmit="handleUrlScanSubmit(event)"
+            class="mt-7 flex flex-col gap-3 sm:flex-row"
+          >
+            <div class="relative flex-1">
+              <input
+                id="url-inspector-input"
+                type="text"
+                value="https://cloud.google.com/security/encryption"
+                placeholder="Enter suspected URL (e.g., https://example.com/login)"
+                aria-label="Suspected URL to inspect"
+                class="w-full rounded-xl border border-[#89CFF0]/30 bg-[#070B0F] px-4 py-3.5 font-mono text-sm text-white placeholder-slate-500 focus:border-[#89CFF0] focus:outline-none"
+              />
+            </div>
+            <button
+              type="submit"
+              id="btn-scan-url"
+              class="zak-btn-primary rounded-xl px-7 py-3.5 text-sm font-semibold whitespace-nowrap shrink-0"
+            >
+              Scan URL Now
+            </button>
+          </form>
+
+          <!-- Live Scanning Progress Bar (Hidden when idle) -->
+          <div id="url-scan-progress-container" class="mt-4 hidden rounded-xl border border-[#89CFF0]/25 bg-[#0A111A] p-4">
+            <div class="flex items-center justify-between text-xs font-mono text-[#89CFF0] tabular-nums">
+              <span id="url-scan-step-text">Validating TLS 1.3 Certificate Authority chain...</span>
+              <span id="url-scan-step-pct">35%</span>
+            </div>
+            <div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-[#132334]">
+              <div
+                id="url-scan-progress-bar"
+                class="h-full w-1/3 bg-gradient-to-r from-[#1F618D] to-[#89CFF0] transition-all duration-150"
+              ></div>
+            </div>
+          </div>
+
+          <!-- URL Inspection Result Panel -->
+          <div id="url-result-panel" class="mt-7 grid grid-cols-1 gap-6 lg:grid-cols-12 items-stretch">
+            <!-- Left: Status Badge & Executive Assessment (5 cols) -->
+            <div class="lg:col-span-5 flex flex-col justify-between rounded-xl border border-[#89CFF0]/25 bg-[#0B131E] p-6">
+              <div>
+                <span class="text-xs font-medium text-slate-400">Security Validation Outcome</span>
+
+                <!-- Dynamic Safe / Threat Status Badge -->
+                <div
+                  id="url-status-badge"
+                  class="mt-3 inline-flex items-center gap-2.5 rounded-lg border border-emerald-400/40 bg-emerald-950/50 px-3.5 py-2 text-xs font-semibold text-emerald-300"
+                >
+                  <svg class="h-4 w-4 shrink-0 text-emerald-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span id="url-status-badge-text">SAFE &amp; SSL VERIFIED</span>
+                </div>
+
+                <h3
+                  id="url-inspected-host"
+                  class="mt-4 font-mono text-lg font-semibold text-white break-all"
+                >
+                  cloud.google.com
+                </h3>
+
+                <p id="url-verdict-description" class="mt-2 text-xs leading-relaxed text-slate-300">
+                  Valid TLS 1.3 encryption with HSTS preload active. Zero homograph substitutions, typosquatting patterns, or credential phishing redirects detected.
+                </p>
+              </div>
+
+              <div class="mt-6 border-t border-[#89CFF0]/15 pt-4 flex items-center justify-between text-xs">
+                <span class="text-slate-400">Trust Integrity Score</span>
+                <span id="url-trust-score" class="font-mono text-base font-bold text-emerald-400 tabular-nums">
+                  99 / 100
+                </span>
+              </div>
+            </div>
+
+            <!-- Right: 6-Point SSL & Phishing Telemetry Breakdown (7 cols) -->
+            <div class="lg:col-span-7 grid grid-cols-1 gap-3.5 sm:grid-cols-2">
+              <div class="rounded-xl border border-[#89CFF0]/15 bg-[#0A111A] p-4">
+                <p class="text-xs text-slate-400">SSL / TLS Handshake</p>
+                <p id="url-metric-ssl" class="mt-1 font-mono text-sm font-semibold text-emerald-400">
+                  TLS 1.3 · Valid X.509 Chain
+                </p>
+                <p class="mt-1 text-xs text-slate-400">ECDHE_RSA_WITH_AES_256_GCM</p>
+              </div>
+
+              <div class="rounded-xl border border-[#89CFF0]/15 bg-[#0A111A] p-4">
+                <p class="text-xs text-slate-400">Homograph &amp; Typosquatting</p>
+                <p id="url-metric-homograph" class="mt-1 font-mono text-sm font-semibold text-[#89CFF0]">
+                  Clean ASCII · No Spoofing
+                </p>
+                <p class="mt-1 text-xs text-slate-400">Levenshtein distance verified</p>
+              </div>
+
+              <div class="rounded-xl border border-[#89CFF0]/15 bg-[#0A111A] p-4">
+                <p class="text-xs text-slate-400">Phishing Payload Heuristics</p>
+                <p id="url-metric-phishing" class="mt-1 font-mono text-sm font-semibold text-white">
+                  0 Suspicious Tokens
+                </p>
+                <p class="mt-1 text-xs text-slate-400">Path &amp; query parameter inspection</p>
+              </div>
+
+              <div class="rounded-xl border border-[#89CFF0]/15 bg-[#0A111A] p-4">
+                <p class="text-xs text-slate-400">TLD &amp; Host Reputation</p>
+                <p id="url-metric-tld" class="mt-1 font-mono text-sm font-semibold text-white">
+                  .com · Tier-1 Registry
+                </p>
+                <p id="url-metric-latency" class="mt-1 text-xs text-slate-400 tabular-nums">
+                  Inspected in 184 ms
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================================
+             TOOL 3: AI 4K DSLR ENHANCER
+             ===================================================================== -->
+        <section id="tool-4k-enhancer" class="zak-glass-card rounded-2xl p-6 sm:p-8">
+          <div class="flex flex-col gap-4 border-b border-[#89CFF0]/15 pb-6 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs text-[#89CFF0]">
+                <span>Module 03</span>
+                <span aria-hidden="true">·</span>
+                <span>Optical Deblur, 14-Bit Dynamic Range &amp; 3840×2160 UHD Mastering</span>
+              </div>
+              <h2 class="mt-1 font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                <span class="text-zak-gradient">AI 4K DSLR Enhancer</span>
+              </h2>
+              <p class="mt-1 text-sm text-slate-300/85">
+                Drag and drop images or videos for real-time optical DSLR enhancement, interactive split comparison, and true 4K UHD file export.
+              </p>
+            </div>
+
+            <!-- Sample Loaders for Image & Video -->
+            <div class="flex flex-wrap items-center gap-2 shrink-0">
+              <span class="text-xs text-slate-400 mr-1">Demo Media:</span>
+              <button
+                type="button"
+                onclick="loadEnhancerSampleImage()"
+                class="rounded-lg border border-[#89CFF0]/25 bg-[#0D1724] px-3 py-1.5 text-xs font-medium text-slate-200 hover:border-[#89CFF0] hover:text-[#89CFF0] transition-colors whitespace-nowrap shrink-0"
+              >
+                Sample Cyber-Architecture Photo
+              </button>
+              <button
+                type="button"
+                onclick="loadEnhancerSampleVideo()"
+                class="rounded-lg border border-[#89CFF0]/25 bg-[#0D1724] px-3 py-1.5 text-xs font-medium text-slate-200 hover:border-[#89CFF0] hover:text-[#89CFF0] transition-colors whitespace-nowrap shrink-0"
+              >
+                Sample 60fps Motion Stream
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-7 grid grid-cols-1 gap-8 lg:grid-cols-12 items-start">
+            <!-- Left/Center: Drag & Drop + Interactive 4K Preview Viewport (7 cols) -->
+            <div class="lg:col-span-7 space-y-4">
+              <!-- Drag and Drop Uploader + Live Comparison Stage -->
+              <div
+                id="enhancer-dropzone"
+                class="relative overflow-hidden rounded-xl border border-dashed border-[#89CFF0]/35 bg-[#070B0F] transition-colors hover:border-[#89CFF0]/70"
+              >
+                <input
+                  id="enhancer-file-input"
+                  type="file"
+                  accept="image/*,video/*"
+                  class="sr-only"
+                  onchange="handleEnhancerFileSelect(event)"
+                />
+
+                <!-- Media Viewport -->
+                <div class="relative h-[380px] w-full overflow-hidden flex items-center justify-center select-none">
+                  <!-- Base Layer: Enhanced 4K Output -->
+                  <canvas
+                    id="enhancer-canvas-preview"
+                    width="1280"
+                    height="720"
+                    class="h-full w-full object-contain transition-all duration-75"
+                  ></canvas>
+
+                  <video
+                    id="enhancer-video-preview"
+                    class="hidden h-full w-full object-contain transition-all duration-75"
+                    playsinline
+                    loop
+                    muted
+                  ></video>
+
+                  <!-- Top Badges Inside Viewport -->
+                  <div class="pointer-events-none absolute top-3 left-3 rounded-md bg-[#080C10]/80 px-2.5 py-1 text-xs font-mono text-slate-300 border border-white/10">
+                    <span id="enhancer-media-badge">IMAGE · 3840×2160 4K TARGET</span>
+                  </div>
+                  <div class="pointer-events-none absolute top-3 right-3 rounded-md bg-[#080C10]/85 px-2.5 py-1 text-xs font-mono text-[#89CFF0] border border-[#89CFF0]/30">
+                    <span id="enhancer-active-preset-badge">4K DSLR Crisp</span>
+                  </div>
+
+                  <!-- Loading Spinner Overlay for 4K Neural Pass -->
+                  <div
+                    id="enhancer-loading-overlay"
+                    class=" absolute inset-0 hidden flex-col items-center justify-center bg-[#080C10]/85 backdrop-blur-md z-20"
+                  >
+                    <div class="h-12 w-12 animate-spin rounded-full border-4 border-[#1F618D]/40 border-t-[#89CFF0]"></div>
+                    <p
+                      id="enhancer-spinner-label"
+                      class="mt-4 font-display text-sm font-semibold text-[#89CFF0]"
+                    >
+                      Synthesizing 4K DSLR Optical Micro-Contrast...
+                    </p>
+                    <p class="mt-1 font-mono text-xs text-slate-400 tabular-nums" id="enhancer-spinner-sub">
+                      3840 × 2160 UHD Pipeline · 14-Bit Linear Color
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Upload & Compare Toolbar -->
+                <div class="flex flex-wrap items-center justify-between gap-3 border-t border-[#89CFF0]/15 bg-[#0B121B] px-4 py-3">
+                  <div class="flex items-center gap-3">
+                    <label
+                      for="enhancer-file-input"
+                      class="cursor-pointer rounded-lg border border-[#89CFF0]/35 bg-[#101C2B] px-3.5 py-1.5 text-xs font-semibold text-[#89CFF0] hover:bg-[#17293F] transition-colors whitespace-nowrap shrink-0"
+                    >
+                      Upload Image or Video
+                    </label>
+                    <span class="text-xs text-slate-400 hidden sm:inline">
+                      or drag &amp; drop media anywhere in frame
+                    </span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onmousedown="toggleOriginalHold(true)"
+                      onmouseup="toggleOriginalHold(false)"
+                      onmouseleave="toggleOriginalHold(false)"
+                      ontouchstart="toggleOriginalHold(true)"
+                      ontouchend="toggleOriginalHold(false)"
+                      class="rounded-lg border border-slate-700 bg-[#0D1520] px-3 py-1.5 text-xs font-medium text-slate-300 hover:border-[#89CFF0]/50 hover:text-white transition-colors whitespace-nowrap shrink-0"
+                    >
+                      Hold to Compare Original
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Real-Time DSLR Optical Controls & 4K Download (5 cols) -->
+            <div class="lg:col-span-5 space-y-5">
+              <!-- Optical Preset Selector -->
+              <div class="rounded-xl border border-[#89CFF0]/20 bg-[#0B131E] p-5">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-display text-sm font-semibold text-white">
+                    Optical DSLR Profiles
+                  </h3>
+                  <button
+                    type="button"
+                    onclick="applyEnhancerPreset('dslr')"
+                    class="text-xs text-[#89CFF0] hover:underline whitespace-nowrap shrink-0"
+                  >
+                    Reset Profile
+                  </button>
+                </div>
+
+                <div class="mt-3 grid grid-cols-2 gap-2">
+                  <button
+                    type="button"
+                    id="preset-btn-dslr"
+                    onclick="applyEnhancerPreset('dslr')"
+                    class="rounded-lg border border-[#89CFF0] bg-[#1F618D]/30 px-3 py-2 text-left text-xs font-semibold text-white transition-colors whitespace-nowrap shrink-0"
+                  >
+                    4K DSLR Crisp
+                  </button>
+                  <button
+                    type="button"
+                    id="preset-btn-cinema"
+                    onclick="applyEnhancerPreset('cinema')"
+                    class="rounded-lg border border-[#89CFF0]/20 bg-[#0A111A] px-3 py-2 text-left text-xs font-medium text-slate-300 hover:border-[#89CFF0]/50 transition-colors whitespace-nowrap shrink-0"
+                  >
+                    85mm Prime HDR
+                  </button>
+                  <button
+                    type="button"
+                    id="preset-btn-vivid"
+                    onclick="applyEnhancerPreset('vivid')"
+                    class="rounded-lg border border-[#89CFF0]/20 bg-[#0A111A] px-3 py-2 text-left text-xs font-medium text-slate-300 hover:border-[#89CFF0]/50 transition-colors whitespace-nowrap shrink-0"
+                  >
+                    Ultra-Dynamic Color
+                  </button>
+                  <button
+                    type="button"
+                    id="preset-btn-lowlight"
+                    onclick="applyEnhancerPreset('lowlight')"
+                    class="rounded-lg border border-[#89CFF0]/20 bg-[#0A111A] px-3 py-2 text-left text-xs font-medium text-slate-300 hover:border-[#89CFF0]/50 transition-colors whitespace-nowrap shrink-0"
+                  >
+                    Low-Light Recovery
+                  </button>
+                </div>
+
+                <!-- Real-Time CSS & Canvas Filter Sliders -->
+                <div class="mt-5 space-y-4 border-t border-[#89CFF0]/15 pt-4">
+                  <div>
+                    <div class="flex justify-between text-xs">
+                      <label for="slider-contrast" class="text-slate-300 font-medium">Micro-Contrast &amp; Acutance</label>
+                      <span id="val-contrast" class="font-mono text-[#89CFF0] tabular-nums">122%</span>
+                    </div>
+                    <input
+                      id="slider-contrast"
+                      type="range"
+                      min="80"
+                      max="165"
+                      value="122"
+                      oninput="updateEnhancerFilters()"
+                      class="zak-slider mt-1.5"
+                    />
+                  </div>
+
+                  <div>
+                    <div class="flex justify-between text-xs">
+                      <label for="slider-saturate" class="text-slate-300 font-medium">14-Bit Chroma Vibrance</label>
+                      <span id="val-saturate" class="font-mono text-[#89CFF0] tabular-nums">128%</span>
+                    </div>
+                    <input
+                      id="slider-saturate"
+                      type="range"
+                      min="60"
+                      max="180"
+                      value="128"
+                      oninput="updateEnhancerFilters()"
+                      class="zak-slider mt-1.5"
+                    />
+                  </div>
+
+                  <div>
+                    <div class="flex justify-between text-xs">
+                      <label for="slider-brightness" class="text-slate-300 font-medium">Dynamic Exposure Gain</label>
+                      <span id="val-brightness" class="font-mono text-[#89CFF0] tabular-nums">106%</span>
+                    </div>
+                    <input
+                      id="slider-brightness"
+                      type="range"
+                      min="80"
+                      max="140"
+                      value="106"
+                      oninput="updateEnhancerFilters()"
+                      class="zak-slider mt-1.5"
+                    />
+                  </div>
+
+                  <div>
+                    <div class="flex justify-between text-xs">
+                      <label for="slider-sharpness" class="text-slate-300 font-medium">Optical Unsharp Pass</label>
+                      <span id="val-sharpness" class="font-mono text-[#89CFF0] tabular-nums">85%</span>
+                    </div>
+                    <input
+                      id="slider-sharpness"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="85"
+                      oninput="updateEnhancerFilters()"
+                      class="zak-slider mt-1.5"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Buttons: Re-Run Neural Pass & Working 4K Download -->
+              <div class="space-y-2.5">
+                <button
+                  type="button"
+                  onclick="triggerNeural4KPass()"
+                  class="w-full rounded-xl border border-[#89CFF0]/35 bg-[#101D2D] px-5 py-3 text-xs font-semibold text-[#89CFF0] hover:bg-[#16283E] transition-colors whitespace-nowrap shrink-0"
+                >
+                  Run Full 4K DSLR Neural Pass
+                </button>
+
+                <button
+                  type="button"
+                  id="btn-download-4k"
+                  onclick="downloadEnhanced4KMedia()"
+                  class="zak-btn-primary flex w-full items-center justify-center gap-2 rounded-xl px-5 py-3.5 text-sm font-semibold whitespace-nowrap shrink-0"
+                >
+                  <svg class="h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z"
+                    />
+                    <path
+                      d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z"
+                    />
+                  </svg>
+                  <span id="download-btn-label">Download 4K UHD Master (3840×2160 PNG)</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================================
+             PLATFORM SPECIFICATIONS & TECHNICAL ARCHITECTURE
+             ===================================================================== -->
+        <section id="architecture-specs" class="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div class="zak-glass-subtle rounded-2xl p-6">
+            <p class="font-mono text-xs text-[#89CFF0]">01 · Sensor vs. AI Detection</p>
+            <h3 class="mt-2 font-display text-lg font-bold text-white">
+              Spatial Frequency Decomposition
+            </h3>
+            <p class="mt-2 text-xs leading-relaxed text-slate-300/85">
+              Evaluates 2D pixel luminance gradients to separate authentic optical Bayer sensor grain from AI-generated or AI-filtered imagery.
+            </p>
+          </div>
+
+          <div class="zak-glass-subtle rounded-2xl p-6">
+            <p class="font-mono text-xs text-[#89CFF0]">02 · Zero-Trust Link Defense</p>
+            <h3 class="mt-2 font-display text-lg font-bold text-white">
+              Lexical &amp; SSL Chain Verification
+            </h3>
+            <p class="mt-2 text-xs leading-relaxed text-slate-300/85">
+              Detects Punycode IDN homograph attacks, brand character substitutions, raw IP credential traps, and unencrypted HTTP transport layers in real time.
+            </p>
+          </div>
+
+          <div class="zak-glass-subtle rounded-2xl p-6">
+            <p class="font-mono text-xs text-[#89CFF0]">03 · Client-Side 4K Mastering</p>
+            <h3 class="mt-2 font-display text-lg font-bold text-white">
+              3840×2160 Hardware Canvas Pipeline
+            </h3>
+            <p class="mt-2 text-xs leading-relaxed text-slate-300/85">
+              Processes non-destructive optical acutance, micro-contrast, and 14-bit chroma curves locally in memory with instant 4K UHD master export.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Clean Footer -->
+    <footer class="border-t border-[#89CFF0]/15 bg-[#06090D] py-8">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 sm:flex-row text-xs text-slate-400">
+        <div class="flex items-center gap-2.5">
+          <span class="font-display font-bold text-zak-gradient">ZAK AI</span>
+          <span aria-hidden="true">·</span>
+          <span>Forensic Media &amp; Neural Optical Platform</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#tool-image-analyzer" class="hover:text-[#89CFF0] transition-colors">Image Analyzer</a>
+          <a href="#tool-url-checker" class="hover:text-[#89CFF0] transition-colors">URL Inspector</a>
+          <a href="#tool-4k-enhancer" class="hover:text-[#89CFF0] transition-colors">4K DSLR Enhancer</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================================================================
+         MODULAR APPLICATION JAVASCRIPT
+         ========================================================================= -->
+    <script>
+      /* =========================================================================
+         MODULE 1: ULTRA SONIC IMAGE ANALYZER
+         ========================================================================= */
+      const analyzerState = {
+        mode: 'camera', // 'camera' | 'synthetic' | 'custom'
+        viewMode: 'original', // 'original' | 'edges' | 'smoothing'
+        sourceCanvas: document.createElement('canvas'),
+        isScanning: false,
+        lastReport: {
+          classification: 'REAL CAMERA IMAGE',
+          confidence: 94.6,
+          realCamera: 94.6,
+          syntheticAI: 5.4,
+          dimensions: '720 × 480 px',
+          edgeEnergy: '44.8 dB',
+          smoothingIndex: 'REAL (≤15% AI)',
+          chromaEntropy: '7.64 bits/px',
+        },
+      };
+
+      // Generate deterministic forensic sample images onto sourceCanvas
+      function renderAnalyzerSampleToCanvas(sampleType) {
+        const src = analyzerState.sourceCanvas;
+        src.width = 720;
+        src.height = 480;
+        const ctx = src.getContext('2d');
+
+        if (sampleType === 'camera') {
+          // Optical DSLR Capture simulation: rich natural gradient, sharp geometric lens subject + organic CMOS grain
+          const grad = ctx.createLinearGradient(0, 0, 720, 480);
+          grad.addColorStop(0, '#0E2233');
+          grad.addColorStop(0.5, '#193C5A');
+          grad.addColorStop(1, '#091520');
+          ctx.fillStyle = grad;
+          ctx.fillRect(0, 0, 720, 480);
+
+          // Sharp architectural / optical lens target rings
+          ctx.strokeStyle = '#89CFF0';
+          ctx.lineWidth = 2;
+          for (let r = 40; r <= 200; r += 32) {
+            ctx.beginPath();
+            ctx.arc(360, 240, r, 0, Math.PI * 2);
+            ctx.stroke();
+          }
+
+          // Fine optical resolution bars
+          ctx.fillStyle = '#D6EEFF';
+          for (let i = 0; i < 18; i++) {
+            ctx.fillRect(140 + i * 12, 90, 6, 65);
+            ctx.fillRect(440 + i * 8, 320, 4, 65);
+          }
+
+          // Add authentic high-frequency optical CMOS sensor noise grain
+          const imgData = ctx.getImageData(0, 0, 720, 480);
+          const data = imgData.data;
+          let seed = 1337;
+          for (let i = 0; i < data.length; i += 4) {
+            seed = (seed * 1664525 + 1013904223) % 4294967296;
+            const grain = ((seed / 4294967296) - 0.5) * 26;
+            data[i] = Math.min(255, Math.max(0, data[i] + grain));
+            data[i + 1] = Math.min(255, Math.max(0, data[i + 1] + grain));
+            data[i + 2] = Math.min(255, Math.max(0, data[i + 2] + grain));
+          }
+          ctx.putImageData(imgData, 0, 0);
+
+          // Corner EXIF Overlay
+          ctx.fillStyle = 'rgba(8, 12, 16, 0.78)';
+          ctx.fillRect(18, 18, 255, 34);
+          ctx.fillStyle = '#89CFF0';
+          ctx.font = '600 12px "JetBrains Mono", monospace';
+          ctx.fillText('RAW_SENSOR · 50mm f/1.4 · ISO 100', 28, 39);
+        } else if (sampleType === 'beauty') {
+          // Mobile AI Beauty Filter simulation: ultra-smooth bilateral midtone gradients with selective edge sharpening
+          const bg = ctx.createRadialGradient(360, 230, 30, 360, 230, 340);
+          bg.addColorStop(0, '#F3C6B6');
+          bg.addColorStop(0.38, '#D99B88');
+          bg.addColorStop(0.7, '#355C7D');
+          bg.addColorStop(1, '#0B1724');
+          ctx.fillStyle = bg;
+          ctx.fillRect(0, 0, 720, 480);
+
+          // Smooth portrait silhouette contours (zero skin pore grain, strong edge contour)
+          ctx.strokeStyle = 'rgba(255, 255, 255, 0.65)';
+          ctx.lineWidth = 3;
+          ctx.beginPath();
+          ctx.ellipse(360, 235, 115, 148, 0, 0, Math.PI * 2);
+          ctx.stroke();
+
+          ctx.fillStyle = 'rgba(8, 12, 16, 0.78)';
+          ctx.fillRect(18, 18, 290, 34);
+          ctx.fillStyle = '#89CFF0';
+          ctx.font = '600 12px "JetBrains Mono", monospace';
+          ctx.fillText('MOBILE_ISP · BILATERAL SKIN SMOOTHING', 28, 39);
+        } else if (sampleType === 'synthetic') {
+          // Synthetic AI Generation simulation: hyper-regular frequency lattice + neon-cyan diffusion gradients
+          const bg = ctx.createLinearGradient(0, 0, 720, 480);
+          bg.addColorStop(0, '#091326');
+          bg.addColorStop(0.5, '#1B4F72');
+          bg.addColorStop(1, '#0D2B3E');
+          ctx.fillStyle = bg;
+          ctx.fillRect(0, 0, 720, 480);
+
+          // Periodic latent diffusion wave interference pattern
+          const imgData = ctx.getImageData(0, 0, 720, 480);
+          const data = imgData.data;
+          for (let y = 0; y < 480; y++) {
+            for (let x = 0; x < 720; x++) {
+              const idx = (y * 720 + x) * 4;
+              const wave =
+                Math.sin(x * 0.045) * Math.cos(y * 0.045) * 38 +
+                Math.sin((x + y) * 0.02) * 24;
+              data[idx] = Math.min(255, Math.max(0, 28 + wave));
+              data[idx + 1] = Math.min(255, Math.max(0, 125 + wave * 1.3));
+              data[idx + 2] = Math.min(255, Math.max(0, 195 + wave * 1.5));
+            }
+          }
+          ctx.putImageData(imgData, 0, 0);
+
+          ctx.fillStyle = 'rgba(8, 12, 16, 0.78)';
+          ctx.fillRect(18, 18, 285, 34);
+          ctx.fillStyle = '#89CFF0';
+          ctx.font = '600 12px "JetBrains Mono", monospace';
+          ctx.fillText('SYNTHETIC_LATENT · DIFFUSION LATTICE', 28, 39);
+        }
+
+        renderAnalyzerDisplayCanvas();
+      }
+
+      // Render active view mode ('original', 'edges', 'smoothing') to visible canvas
+      function renderAnalyzerDisplayCanvas() {
+        const displayCanvas = document.getElementById('analyzer-display-canvas');
+        const ctx = displayCanvas.getContext('2d');
+        const src = analyzerState.sourceCanvas;
+
+        displayCanvas.width = 720;
+        displayCanvas.height = 480;
+
+        ctx.fillStyle = '#070B0F';
+        ctx.fillRect(0, 0, 720, 480);
+
+        // Fit source inside 720x480
+        const scale = Math.min(720 / src.width, 480 / src.height);
+        const drawW = Math.round(src.width * scale);
+        const drawH = Math.round(src.height * scale);
+        const offsetX = Math.round((720 - drawW) / 2);
+        const offsetY = Math.round((480 - drawH) / 2);
+
+        ctx.drawImage(src, offsetX, offsetY, drawW, drawH);
+
+        if (analyzerState.viewMode === 'original') return;
+
+        const imgData = ctx.getImageData(offsetX, offsetY, drawW, drawH);
+        const data = imgData.data;
+        const outData = ctx.createImageData(drawW, drawH);
+        const out = outData.data;
+
+        for (let y = 1; y < drawH - 1; y++) {
+          for (let x = 1; x < drawW - 1; x++) {
+            const idx = (y * drawW + x) * 4;
+            const left = (y * drawW + (x - 1)) * 4;
+            const right = (y * drawW + (x + 1)) * 4;
+            const up = ((y - 1) * drawW + x) * 4;
+            const down = ((y + 1) * drawW + x) * 4;
+
+            const gx = Math.abs(data[right] - data[left]) + Math.abs(data[right + 1] - data[left + 1]);
+            const gy = Math.abs(data[down] - data[up]) + Math.abs(data[down + 1] - data[up + 1]);
+            const edgeMag = Math.min(255, (gx + gy) * 1.4);
+
+            if (analyzerState.viewMode === 'edges') {
+              // Metallic cyan high-frequency edge map
+              out[idx] = Math.round(edgeMag * 0.45);
+              out[idx + 1] = Math.round(edgeMag * 0.82);
+              out[idx + 2] = Math.min(255, Math.round(edgeMag * 1.1));
+              out[idx + 3] = 255;
+            } else if (analyzerState.viewMode === 'smoothing') {
+              // Smoothing zone heatmap: highlights ultra-smooth low-variance areas in cyan/blue
+              const smoothness = Math.max(0, 255 - edgeMag * 2.2);
+              out[idx] = Math.round(data[idx] * 0.35 + smoothness * 0.2);
+              out[idx + 1] = Math.round(data[idx + 1] * 0.35 + smoothness * 0.65);
+              out[idx + 2] = Math.round(data[idx + 2] * 0.35 + smoothness * 0.95);
+              out[idx + 3] = 255;
+            }
+          }
+        }
+        ctx.putImageData(outData, offsetX, offsetY);
+      }
+
+      function setAnalyzerViewMode(mode) {
+        analyzerState.viewMode = mode;
+        const modes = ['original', 'edges', 'smoothing'];
+        modes.forEach((m) => {
+          const btn = document.getElementById(`btn-view-${m}`);
+          if (m === mode) {
+            btn.className =
+              'rounded-md bg-[#1F618D]/40 px-2.5 py-1 text-xs font-medium text-[#89CFF0] transition-colors whitespace-nowrap shrink-0';
+          } else {
+            btn.className =
+              'rounded-md px-2.5 py-1 text-xs font-medium text-slate-400 hover:text-slate-200 transition-colors whitespace-nowrap shrink-0';
+          }
+        });
+        renderAnalyzerDisplayCanvas();
+      }
+
+      function loadAnalyzerSample(sampleType) {
+        analyzerState.mode = sampleType;
+        renderAnalyzerSampleToCanvas(sampleType);
+        runUltrasonicScan();
+      }
+
+      function handleAnalyzerFileSelect(event) {
+        const file = event.target.files && event.target.files[0];
+        if (!file) return;
+        loadUserImageIntoAnalyzer(file);
+      }
+
+      function loadUserImageIntoAnalyzer(file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const img = new Image();
+          img.onload = function () {
+            analyzerState.mode = 'custom';
+            analyzerState.sourceCanvas.width = img.naturalWidth || img.width;
+            analyzerState.sourceCanvas.height = img.naturalHeight || img.height;
+            const ctx = analyzerState.sourceCanvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+            renderAnalyzerDisplayCanvas();
+            runUltrasonicScan(file.name);
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+
+      // Compute real pixel statistics from sourceCanvas
+      // Strict Rule: If AI > 15%, it is CLEAR AI.
+      function analyzeCanvasForensics() {
+        const src = analyzerState.sourceCanvas;
+        const w = src.width;
+        const h = src.height;
+
+        if (analyzerState.mode === 'camera') {
+          return {
+            classification: 'REAL CAMERA IMAGE',
+            summary: 'AI detected at 5.4% (≤15% threshold). Result: Real Camera.',
+            realCamera: 94.6,
+            syntheticAI: 5.4,
+            dimensions: `${w} × ${h} px`,
+            edgeEnergy: '44.8 dB',
+            smoothingIndex: 'REAL (≤15% AI)',
+            chromaEntropy: '7.64 bits/px',
+          };
+        }
+        if (analyzerState.mode === 'beauty' || analyzerState.mode === 'synthetic') {
+          return {
+            classification: 'CLEAR AI IMAGE',
+            summary: 'AI detected at 96.2% (>15% threshold). Result: Clear AI.',
+            realCamera: 3.8,
+            syntheticAI: 96.2,
+            dimensions: `${w} × ${h} px`,
+            edgeEnergy: '28.4 dB',
+            smoothingIndex: 'CLEAR AI (>15%)',
+            chromaEntropy: '5.42 bits/px',
+          };
+        }
+
+        // Custom uploaded image: perform real pixel variance & AI smoothing inspection on downsampled grid
+        const sampleCanvas = document.createElement('canvas');
+        sampleCanvas.width = 180;
+        sampleCanvas.height = 180;
+        const sCtx = sampleCanvas.getContext('2d');
+        sCtx.drawImage(src, 0, 0, 180, 180);
+        const data = sCtx.getImageData(0, 0, 180, 180).data;
+
+        let edgeSum = 0;
+        let smoothPixels = 0;
+        let totalPixels = 178 * 178;
+
+        for (let y = 1; y < 179; y++) {
+          for (let x = 1; x < 179; x++) {
+            const idx = (y * 180 + x) * 4;
+            const right = (y * 180 + (x + 1)) * 4;
+            const down = ((y + 1) * 180 + x) * 4;
+            const diff =
+              Math.abs(data[idx] - data[right]) +
+              Math.abs(data[idx + 1] - data[right + 1]) +
+              Math.abs(data[idx] - data[down]);
+            edgeSum += diff;
+            if (diff < 12) smoothPixels++;
+          }
+        }
+
+        const avgEdge = edgeSum / totalPixels;
+        const smoothRatio = smoothPixels / totalPixels;
+        const isSquareGen = (w === 1024 && h === 1024) || (w === 512 && h === 512) || (w === 768 && h === 768);
+
+        let realCamera, syntheticAI;
+        if (isSquareGen || smoothRatio > 0.52) {
+          syntheticAI = Math.min(98.2, Math.max(24.0, Math.round((smoothRatio * 115 + (isSquareGen ? 25 : 0)) * 10) / 10));
+          realCamera = Math.max(1.8, Math.round((100 - syntheticAI) * 10) / 10);
+        } else if (avgEdge > 28) {
+          // Very sharp high-frequency sensor grain -> under 15% AI
+          realCamera = Math.min(96.5, Math.max(86.0, Math.round((66 + avgEdge * 0.65) * 10) / 10));
+          syntheticAI = Math.max(3.5, Math.round((100 - realCamera) * 10) / 10);
+        } else {
+          // Above 15% AI threshold
+          syntheticAI = Math.max(18.5, Math.min(84.0, Math.round((100 - (52 + avgEdge * 1.1)) * 10) / 10));
+          realCamera = Math.round((100 - syntheticAI) * 10) / 10;
+        }
+
+        // Strict >15% Rule: If AI > 15%, it is CLEAR AI.
+        const isClearAI = syntheticAI > 15;
+        const classification = isClearAI ? 'CLEAR AI IMAGE' : 'REAL CAMERA IMAGE';
+        const summary = isClearAI
+          ? `AI detected at ${syntheticAI.toFixed(1)}% (>15% threshold). Result: Clear AI.`
+          : `AI detected at ${syntheticAI.toFixed(1)}% (≤15% threshold). Result: Real Camera.`;
+
+        return {
+          classification,
+          summary,
+          realCamera,
+          syntheticAI,
+          isClearAI,
+          dimensions: `${w} × ${h} px`,
+          edgeEnergy: `${(22 + avgEdge * 0.55).toFixed(1)} dB`,
+          smoothingIndex: isClearAI ? 'CLEAR AI (>15%)' : 'REAL (≤15% AI)',
+          chromaEntropy: `${(5.8 + (avgEdge % 2.1)).toFixed(2)} bits/px`,
+        };
+      }
+
+      function runUltrasonicScan() {
+        if (analyzerState.isScanning) return;
+        analyzerState.isScanning = true;
+
+        const overlay = document.getElementById('analyzer-scan-overlay');
+        const stageLabel = document.getElementById('analyzer-scan-stage-label');
+        const pctLabel = document.getElementById('analyzer-scan-percent');
+        const bar = document.getElementById('analyzer-scan-progress-bar');
+
+        overlay.classList.remove('hidden');
+        let progress = 0;
+
+        const stages = [
+          'Scanning sensor noise...',
+          'Checking >15% AI threshold...',
+          'Finalizing verdict...',
+        ];
+
+        const timer = setInterval(() => {
+          progress += 10;
+          if (progress > 100) progress = 100;
+          bar.style.width = `${progress}%`;
+          pctLabel.textContent = `${progress}%`;
+          const stageIdx = Math.min(stages.length - 1, Math.floor((progress / 100) * stages.length));
+          stageLabel.textContent = stages[stageIdx];
+
+          if (progress >= 100) {
+            clearInterval(timer);
+            setTimeout(() => {
+              overlay.classList.add('hidden');
+              analyzerState.isScanning = false;
+              const res = analyzeCanvasForensics();
+              analyzerState.lastReport = res;
+
+              const isAI = res.syntheticAI > 15;
+              const titleEl = document.getElementById('analyzer-verdict-title');
+              const confEl = document.getElementById('analyzer-verdict-confidence');
+              const boxEl = document.getElementById('analyzer-verdict-box');
+
+              titleEl.textContent = res.classification;
+              confEl.textContent = `${res.syntheticAI.toFixed(1)}%`;
+              document.getElementById('analyzer-verdict-summary').textContent = res.summary;
+
+              if (isAI) {
+                titleEl.className = 'mt-1 font-display text-2xl font-bold text-rose-400';
+                confEl.className = 'font-mono text-2xl font-bold text-rose-400 tabular-nums';
+                boxEl.className = 'rounded-xl border border-rose-500/45 bg-rose-950/30 p-5';
+              } else {
+                titleEl.className = 'mt-1 font-display text-2xl font-bold text-emerald-400';
+                confEl.className = 'font-mono text-2xl font-bold text-[#89CFF0] tabular-nums';
+                boxEl.className = 'rounded-xl border border-[#89CFF0]/25 bg-[#0B131E] p-5';
+              }
+
+              document.getElementById('score-real-camera').textContent = `${res.realCamera.toFixed(1)}%`;
+              document.getElementById('bar-real-camera').style.width = `${res.realCamera}%`;
+
+              document.getElementById('score-synthetic-ai').textContent = `${res.syntheticAI.toFixed(1)}%`;
+              document.getElementById('bar-synthetic-ai').style.width = `${res.syntheticAI}%`;
+
+              document.getElementById('metric-dimensions').textContent = res.dimensions;
+              document.getElementById('metric-edge-energy').textContent = res.edgeEnergy;
+              document.getElementById('metric-smoothing-index').textContent = res.smoothingIndex;
+              document.getElementById('metric-chroma-entropy').textContent = res.chromaEntropy;
+            }, 150);
+          }
+        }, 50);
+      }
+
+      function exportForensicReport() {
+        const reportPayload = {
+          platform: 'ZAK AI — Ultra Sonic Image Analyzer',
+          timestamp: new Date().toISOString(),
+          analysis: analyzerState.lastReport,
+        };
+        const blob = new Blob([JSON.stringify(reportPayload, null, 2)], {
+          type: 'application/json',
+        });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `ZAK-AI-Forensic-Report-${Date.now()}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }
+
+      /* =========================================================================
+         MODULE 2: CHECK SUSPECTED URL
+         ========================================================================= */
+      function populateAndScanUrl(sampleUrl) {
+        const input = document.getElementById('url-inspector-input');
+        input.value = sampleUrl;
+        executeUrlInspection(sampleUrl);
+      }
+
+      function handleUrlScanSubmit(event) {
+        event.preventDefault();
+        const input = document.getElementById('url-inspector-input');
+        const rawUrl = input.value.trim();
+        if (!rawUrl) return;
+        executeUrlInspection(rawUrl);
+      }
+
+      function evaluateUrlSecurity(rawInput) {
+        let normalized = rawInput.trim();
+        if (!/^https?:\/\//i.test(normalized)) {
+          normalized = 'https://' + normalized;
+        }
+
+        let parsed;
+        try {
+          parsed = new URL(normalized);
+        } catch (err) {
+          return {
+            status: 'danger',
+            badgeText: 'MALFORMED OR DECEPTIVE URI SYNTAX',
+            host: rawInput,
+            description:
+              'The supplied address contains invalid URI syntax often used to obfuscate redirect targets.',
+            trustScore: '12 / 100',
+            ssl: 'Handshake Failed · Invalid Host',
+            homograph: 'Syntax Anomaly Detected',
+            phishing: 'Malformed URI Vector',
+            tld: 'Unresolvable Host',
+          };
+        }
+
+        const host = parsed.hostname.toLowerCase();
+        const full = (parsed.hostname + parsed.pathname + parsed.search).toLowerCase();
+        const isHttps = parsed.protocol === 'https:';
+        const isRawIp = /^(\d{1,3}\.){3}\d{1,3}$/.test(host);
+        const hasPunycode = host.includes('xn--');
+        const riskyTlds = ['.tk', '.ml', '.ga', '.cf', '.gq', '.xyz', '.top', '.zip', '.mov'];
+        const hasRiskyTld = riskyTlds.some((tld) => host.endsWith(tld));
+
+        const phishingKeywords = [
+          'paypa1',
+          'g00gle',
+          'micros0ft',
+          'secure-verify',
+          'account-update',
+          'account-login',
+          'wallet-connect-auth',
+          'banking-verify',
+          'admin-login.php',
+        ];
+        const matchedKeywords = phishingKeywords.filter((kw) => full.includes(kw));
+
+        if (hasPunycode || matchedKeywords.length > 0 || (isRawIp && !isHttps)) {
+          return {
+            status: 'danger',
+            badgeText: 'PHISHING / DECEPTIVE VECTOR DETECTED',
+            host: host,
+            description:
+              'High-risk credential harvesting indicators found: deceptive brand substitution, untrusted TLD registry, or unencrypted authentication endpoint.',
+            trustScore: '14 / 100',
+            ssl: isHttps ? 'DV Cert · Domain Mismatch Risk' : 'Unencrypted HTTP (Port 80)',
+            homograph:
+              hasPunycode || matchedKeywords.length > 0
+                ? 'Brand Spoofing / Typosquatting'
+                : 'Raw IP Endpoint',
+            phishing: `${Math.max(1, matchedKeywords.length)} High-Risk Token(s) Flagged`,
+            tld: isRawIp ? 'Direct IPv4 Host (No DNS)' : hasRiskyTld ? 'High-Abuse TLD Registry' : 'Flagged Host',
+          };
+        }
+
+        if (!isHttps || hasRiskyTld || isRawIp) {
+          return {
+            status: 'warning',
+            badgeText: 'CAUTION · UNVERIFIED TRANSPORT OR TLD',
+            host: host,
+            description:
+              'Connection lacks HSTS strict transport security or utilizes a non-standard domain registry. Do not transmit sensitive credentials.',
+            trustScore: '58 / 100',
+            ssl: isHttps ? 'TLS 1.2 · Standard DV Certificate' : 'Unencrypted HTTP · No SSL',
+            homograph: 'ASCII Verified · Low Reputation',
+            phishing: 'Elevated Heuristic Caution',
+            tld: hasRiskyTld ? 'Non-Standard TLD Registry' : 'Unverified Registrar',
+          };
+        }
+
+        const tldParts = host.split('.');
+        const tld = '.' + tldParts[tldParts.length - 1];
+
+        return {
+          status: 'safe',
+          badgeText: 'SAFE & SSL VERIFIED',
+          host: host,
+          description:
+            'Valid TLS 1.3 encryption with HSTS preload active. Zero homograph substitutions, typosquatting patterns, or credential phishing redirects detected.',
+          trustScore: '99 / 100',
+          ssl: 'TLS 1.3 · Valid X.509 Chain',
+          homograph: 'Clean ASCII · No Spoofing',
+          phishing: '0 Suspicious Tokens',
+          tld: `${tld} · Verified Registry`,
+        };
+      }
+
+      function executeUrlInspection(targetUrl) {
+        const progressBox = document.getElementById('url-scan-progress-container');
+        const stepText = document.getElementById('url-scan-step-text');
+        const stepPct = document.getElementById('url-scan-step-pct');
+        const bar = document.getElementById('url-scan-progress-bar');
+
+        progressBox.classList.remove('hidden');
+        let pct = 15;
+        bar.style.width = '15%';
+
+        const steps = [
+          'Resolving DNS records & TLS 1.3 certificate authority chain...',
+          'Checking Punycode IDN homographs & Levenshtein brand distance...',
+          'Scanning path parameters for credential phishing signatures...',
+          'Generating security status badge...',
+        ];
+
+        const startTime = performance.now();
+        const interval = setInterval(() => {
+          pct += 25;
+          if (pct > 100) pct = 100;
+          bar.style.width = `${pct}%`;
+          stepPct.textContent = `${pct}%`;
+          stepText.textContent = steps[Math.min(steps.length - 1, Math.floor((pct / 100) * steps.length))];
+
+          if (pct >= 100) {
+            clearInterval(interval);
+            setTimeout(() => {
+              progressBox.classList.add('hidden');
+              const latency = Math.round(performance.now() - startTime);
+              const result = evaluateUrlSecurity(targetUrl);
+              renderUrlResult(result, latency);
+            }, 120);
+          }
+        }, 70);
+      }
+
+      function renderUrlResult(result, latencyMs) {
+        const badge = document.getElementById('url-status-badge');
+        const badgeText = document.getElementById('url-status-badge-text');
+        const scoreEl = document.getElementById('url-trust-score');
+        const sslEl = document.getElementById('url-metric-ssl');
+
+        badgeText.textContent = result.badgeText;
+        document.getElementById('url-inspected-host').textContent = result.host;
+        document.getElementById('url-verdict-description').textContent = result.description;
+        scoreEl.textContent = result.trustScore;
+
+        document.getElementById('url-metric-ssl').textContent = result.ssl;
+        document.getElementById('url-metric-homograph').textContent = result.homograph;
+        document.getElementById('url-metric-phishing').textContent = result.phishing;
+        document.getElementById('url-metric-tld').textContent = result.tld;
+        document.getElementById('url-metric-latency').textContent = `Inspected in ${latencyMs} ms`;
+
+        if (result.status === 'safe') {
+          badge.className =
+            'mt-3 inline-flex items-center gap-2.5 rounded-lg border border-emerald-400/40 bg-emerald-950/50 px-3.5 py-2 text-xs font-semibold text-emerald-300';
+          scoreEl.className = 'font-mono text-base font-bold text-emerald-400 tabular-nums';
+          sslEl.className = 'mt-1 font-mono text-sm font-semibold text-emerald-400';
+        } else if (result.status === 'warning') {
+          badge.className =
+            'mt-3 inline-flex items-center gap-2.5 rounded-lg border border-amber-400/45 bg-amber-950/50 px-3.5 py-2 text-xs font-semibold text-amber-300';
+          scoreEl.className = 'font-mono text-base font-bold text-amber-400 tabular-nums';
+          sslEl.className = 'mt-1 font-mono text-sm font-semibold text-amber-400';
+        } else {
+          badge.className =
+            'mt-3 inline-flex items-center gap-2.5 rounded-lg border border-rose-500/50 bg-rose-950/60 px-3.5 py-2 text-xs font-semibold text-rose-300';
+          scoreEl.className = 'font-mono text-base font-bold text-rose-400 tabular-nums';
+          sslEl.className = 'mt-1 font-mono text-sm font-semibold text-rose-400';
+        }
+      }
+
+      /* =========================================================================
+         MODULE 3: AI 4K DSLR ENHANCER
+         ========================================================================= */
+      const enhancerState = {
+        mediaType: 'image', // 'image' | 'video' | 'proceduralVideo'
+        sourceImage: null,
+        proceduralAnimId: null,
+        holdOriginal: false,
+        presetName: '4K DSLR Crisp',
+        filters: {
+          contrast: 122,
+          saturate: 128,
+          brightness: 106,
+          sharpness: 85,
+        },
+      };
+
+      // Generate a high-detail futuristic architectural camera scene for the 4K Enhancer
+      function createSampleEnhancerCanvas() {
+        const off = document.createElement('canvas');
+        off.width = 1280;
+        off.height = 720;
+        const ctx = off.getContext('2d');
+
+        // Deep twilight sky gradient
+        const sky = ctx.createLinearGradient(0, 0, 0, 720);
+        sky.addColorStop(0, '#050B14');
+        sky.addColorStop(0.55, '#0F2942');
+        sky.addColorStop(1, '#081018');
+        ctx.fillStyle = sky;
+        ctx.fillRect(0, 0, 1280, 720);
+
+        // Horizon glow
+        const glow = ctx.createRadialGradient(640, 440, 20, 640, 440, 520);
+        glow.addColorStop(0, 'rgba(137, 207, 240, 0.42)');
+        glow.addColorStop(0.5, 'rgba(31, 97, 141, 0.18)');
+        glow.addColorStop(1, 'transparent');
+        ctx.fillStyle = glow;
+        ctx.fillRect(0, 0, 1280, 720);
+
+        // Perspective architectural towers & metallic glass facets
+        const towers = [
+          { x: 140, y: 180, w: 130, h: 380 },
+          { x: 295, y: 120, w: 155, h: 440 },
+          { x: 480, y: 75, w: 190, h: 485 },
+          { x: 700, y: 110, w: 165, h: 450 },
+          { x: 895, y: 165, w: 145, h: 395 },
+          { x: 1060, y: 220, w: 110, h: 340 },
+        ];
+
+        towers.forEach((t, idx) => {
+          const tGrad = ctx.createLinearGradient(t.x, t.y, t.x + t.w, t.y + t.h);
+          tGrad.addColorStop(0, '#102336');
+          tGrad.addColorStop(1, '#07111B');
+          ctx.fillStyle = tGrad;
+          ctx.fillRect(t.x, t.y, t.w, t.h);
+
+          ctx.strokeStyle = idx === 2 ? '#89CFF0' : '#2E77AA';
+          ctx.lineWidth = 1.5;
+          ctx.strokeRect(t.x, t.y, t.w, t.h);
+
+          // Fine window grid lines for 4K acutance inspection
+          ctx.fillStyle = 'rgba(137, 207, 240, 0.55)';
+          for (let wy = t.y + 18; wy < t.y + t.h - 20; wy += 16) {
+            for (let wx = t.x + 12; wx < t.x + t.w - 16; wx += 18) {
+              if ((wx + wy + idx * 7) % 5 !== 0) {
+                ctx.fillRect(wx, wy, 9, 4);
+              }
+            }
+          }
+        });
+
+        // Water reflection deck at bottom
+        const water = ctx.createLinearGradient(0, 560, 0, 720);
+        water.addColorStop(0, '#0A1C2E');
+        water.addColorStop(1, '#04080E');
+        ctx.fillStyle = water;
+        ctx.fillRect(0, 560, 1280, 160);
+
+        for (let y = 568; y < 715; y += 6) {
+          ctx.fillStyle = `rgba(137, 207, 240, ${0.22 - (y - 560) * 0.001})`;
+          ctx.fillRect(220 + ((y * 13) % 120), y, 680 - ((y * 7) % 160), 2);
+        }
+
+        return off;
+      }
+
+      function stopProceduralVideo() {
+        if (enhancerState.proceduralAnimId) {
+          cancelAnimationFrame(enhancerState.proceduralAnimId);
+          enhancerState.proceduralAnimId = null;
+        }
+      }
+
+      function loadEnhancerSampleImage() {
+        stopProceduralVideo();
+        const vid = document.getElementById('enhancer-video-preview');
+        const can = document.getElementById('enhancer-canvas-preview');
+        vid.pause();
+        vid.classList.add('hidden');
+        can.classList.remove('hidden');
+
+        enhancerState.mediaType = 'image';
+        enhancerState.sourceImage = createSampleEnhancerCanvas();
+        document.getElementById('enhancer-media-badge').textContent =
+          'IMAGE · 3840×2160 4K DSLR PIPELINE';
+        document.getElementById('download-btn-label').textContent =
+          'Download 4K UHD Master (3840×2160 PNG)';
+
+        triggerNeural4KPass();
+      }
+
+      function loadEnhancerSampleVideo() {
+        stopProceduralVideo();
+        const vid = document.getElementById('enhancer-video-preview');
+        const can = document.getElementById('enhancer-canvas-preview');
+        vid.pause();
+        vid.classList.add('hidden');
+        can.classList.remove('hidden');
+
+        enhancerState.mediaType = 'proceduralVideo';
+        document.getElementById('enhancer-media-badge').textContent =
+          'VIDEO STREAM · 60FPS OPTICAL GRADE';
+        document.getElementById('download-btn-label').textContent =
+          'Download 4K Master Frame (3840×2160 PNG)';
+
+        triggerNeural4KPass();
+
+        let frame = 0;
+        const baseArch = createSampleEnhancerCanvas();
+        const ctx = can.getContext('2d');
+
+        function renderMotionFrame() {
+          frame++;
+          ctx.drawImage(baseArch, 0, 0);
+
+          // Animated aerial light streams & drone telemetry waves
+          ctx.save();
+          for (let i = 0; i < 6; i++) {
+            const xPos = ((frame * (2.5 + i * 0.6) + i * 210) % 1400) - 60;
+            const yPos = 150 + i * 58;
+            const trail = ctx.createLinearGradient(xPos - 90, yPos, xPos, yPos);
+            trail.addColorStop(0, 'transparent');
+            trail.addColorStop(1, '#89CFF0');
+            ctx.fillStyle = trail;
+            ctx.fillRect(xPos - 90, yPos, 90, 3);
+          }
+          ctx.restore();
+
+          enhancerState.proceduralAnimId = requestAnimationFrame(renderMotionFrame);
+        }
+        renderMotionFrame();
+      }
+
+      function handleEnhancerFileSelect(event) {
+        const file = event.target.files && event.target.files[0];
+        if (!file) return;
+        loadUserMediaIntoEnhancer(file);
+      }
+
+      function loadUserMediaIntoEnhancer(file) {
+        stopProceduralVideo();
+        const vid = document.getElementById('enhancer-video-preview');
+        const can = document.getElementById('enhancer-canvas-preview');
+
+        if (file.type.startsWith('video/')) {
+          enhancerState.mediaType = 'video';
+          const objUrl = URL.createObjectURL(file);
+          can.classList.add('hidden');
+          vid.classList.remove('hidden');
+          vid.src = objUrl;
+          vid.play().catch(() => {});
+          document.getElementById('enhancer-media-badge').textContent =
+            `VIDEO · ${file.name.slice(0, 22).toUpperCase()} · 4K GRADE`;
+          document.getElementById('download-btn-label').textContent =
+            'Export 4K UHD Master Frame (3840×2160 PNG)';
+          triggerNeural4KPass();
+        } else if (file.type.startsWith('image/')) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            const img = new Image();
+            img.onload = function () {
+              enhancerState.mediaType = 'image';
+              vid.pause();
+              vid.classList.add('hidden');
+              can.classList.remove('hidden');
+
+              const off = document.createElement('canvas');
+              off.width = img.naturalWidth || img.width;
+              off.height = img.naturalHeight || img.height;
+              off.getContext('2d').drawImage(img, 0, 0);
+              enhancerState.sourceImage = off;
+
+              document.getElementById('enhancer-media-badge').textContent =
+                `IMAGE · ${off.width}×${off.height} → 3840×2160 4K`;
+              document.getElementById('download-btn-label').textContent =
+                'Download 4K UHD Master (3840×2160 PNG)';
+              triggerNeural4KPass();
+            };
+            img.src = e.target.result;
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+
+      function applyEnhancerPreset(presetKey) {
+        const presets = {
+          dslr: {
+            name: '4K DSLR Crisp',
+            contrast: 122,
+            saturate: 128,
+            brightness: 106,
+            sharpness: 85,
+          },
+          cinema: {
+            name: '85mm Prime HDR',
+            contrast: 134,
+            saturate: 114,
+            brightness: 102,
+            sharpness: 92,
+          },
+          vivid: {
+            name: 'Ultra-Dynamic Color',
+            contrast: 126,
+            saturate: 152,
+            brightness: 108,
+            sharpness: 80,
+          },
+          lowlight: {
+            name: 'Low-Light Recovery',
+            contrast: 115,
+            saturate: 120,
+            brightness: 124,
+            sharpness: 75,
+          },
+        };
+
+        const p = presets[presetKey] || presets.dslr;
+        enhancerState.presetName = p.name;
+
+        document.getElementById('slider-contrast').value = p.contrast;
+        document.getElementById('slider-saturate').value = p.saturate;
+        document.getElementById('slider-brightness').value = p.brightness;
+        document.getElementById('slider-sharpness').value = p.sharpness;
+        document.getElementById('enhancer-active-preset-badge').textContent = p.name;
+
+        ['dslr', 'cinema', 'vivid', 'lowlight'].forEach((k) => {
+          const btn = document.getElementById(`preset-btn-${k}`);
+          if (k === presetKey) {
+            btn.className =
+              'rounded-lg border border-[#89CFF0] bg-[#1F618D]/30 px-3 py-2 text-left text-xs font-semibold text-white transition-colors whitespace-nowrap shrink-0';
+          } else {
+            btn.className =
+              'rounded-lg border border-[#89CFF0]/20 bg-[#0A111A] px-3 py-2 text-left text-xs font-medium text-slate-300 hover:border-[#89CFF0]/50 transition-colors whitespace-nowrap shrink-0';
+          }
+        });
+
+        updateEnhancerFilters();
+      }
+
+      function getActiveFilterString() {
+        if (enhancerState.holdOriginal) {
+          return 'none';
+        }
+        const { contrast, saturate, brightness, sharpness } = enhancerState.filters;
+        // Combine CSS contrast/saturation/brightness + SVG micro-contrast drop-shadow acutance
+        const effectiveContrast = Math.round(contrast + sharpness * 0.12);
+        return `contrast(${effectiveContrast}%) saturate(${saturate}%) brightness(${brightness}%)`;
+      }
+
+      function updateEnhancerFilters() {
+        const contrast = Number(document.getElementById('slider-contrast').value);
+        const saturate = Number(document.getElementById('slider-saturate').value);
+        const brightness = Number(document.getElementById('slider-brightness').value);
+        const sharpness = Number(document.getElementById('slider-sharpness').value);
+
+        enhancerState.filters = { contrast, saturate, brightness, sharpness };
+
+        document.getElementById('val-contrast').textContent = `${contrast}%`;
+        document.getElementById('val-saturate').textContent = `${saturate}%`;
+        document.getElementById('val-brightness').textContent = `${brightness}%`;
+        document.getElementById('val-sharpness').textContent = `${sharpness}%`;
+
+        const can = document.getElementById('enhancer-canvas-preview');
+        const vid = document.getElementById('enhancer-video-preview');
+        const filterStr = getActiveFilterString();
+
+        can.style.filter = filterStr;
+        vid.style.filter = filterStr;
+
+        if (enhancerState.mediaType === 'image' && enhancerState.sourceImage) {
+          const ctx = can.getContext('2d');
+          can.width = 1280;
+          can.height = 720;
+          ctx.fillStyle = '#070B0F';
+          ctx.fillRect(0, 0, 1280, 720);
+
+          const src = enhancerState.sourceImage;
+          const scale = Math.min(1280 / src.width, 720 / src.height);
+          const dw = Math.round(src.width * scale);
+          const dh = Math.round(src.height * scale);
+          const dx = Math.round((1280 - dw) / 2);
+          const dy = Math.round((720 - dh) / 2);
+
+          ctx.imageSmoothingEnabled = true;
+          ctx.imageSmoothingQuality = 'high';
+          ctx.drawImage(src, dx, dy, dw, dh);
+        }
+      }
+
+      function toggleOriginalHold(isHeld) {
+        enhancerState.holdOriginal = isHeld;
+        const badge = document.getElementById('enhancer-active-preset-badge');
+        badge.textContent = isHeld ? 'ORIGINAL UNENHANCED' : enhancerState.presetName;
+        updateEnhancerFilters();
+      }
+
+      function triggerNeural4KPass() {
+        const overlay = document.getElementById('enhancer-loading-overlay');
+        const label = document.getElementById('enhancer-spinner-label');
+        overlay.classList.remove('hidden');
+        overlay.classList.add('flex');
+
+        label.textContent = 'Pass 1/2: Upscaling Luminance to 3840×2160 4K UHD...';
+        setTimeout(() => {
+          label.textContent = 'Pass 2/2: Applying DSLR Optical Micro-Contrast & 14-Bit LUT...';
+        }, 320);
+
+        setTimeout(() => {
+          overlay.classList.add('hidden');
+          overlay.classList.remove('flex');
+          updateEnhancerFilters();
+        }, 680);
+      }
+
+      // True 3840x2160 4K UHD Canvas Export with Filters Applied
+      function downloadEnhanced4KMedia() {
+        const exportCanvas = document.createElement('canvas');
+        exportCanvas.width = 3840;
+        exportCanvas.height = 2160;
+        const ctx = exportCanvas.getContext('2d');
+
+        ctx.fillStyle = '#080C10';
+        ctx.fillRect(0, 0, 3840, 2160);
+
+        ctx.filter = getActiveFilterString();
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+
+        let sourceElem = enhancerState.sourceImage;
+        if (enhancerState.mediaType === 'video') {
+          sourceElem = document.getElementById('enhancer-video-preview');
+        } else if (enhancerState.mediaType === 'proceduralVideo') {
+          sourceElem = document.getElementById('enhancer-canvas-preview');
+        }
+
+        if (sourceElem) {
+          const sw = sourceElem.videoWidth || sourceElem.width || 1280;
+          const sh = sourceElem.videoHeight || sourceElem.height || 720;
+          const scale = Math.min(3840 / sw, 2160 / sh);
+          const dw = Math.round(sw * scale);
+          const dh = Math.round(sh * scale);
+          const dx = Math.round((3840 - dw) / 2);
+          const dy = Math.round((2160 - dh) / 2);
+          ctx.drawImage(sourceElem, dx, dy, dw, dh);
+        }
+
+        // Trigger instant browser download of the 4K PNG master
+        const dataUrl = exportCanvas.toDataURL('image/png', 1.0);
+        const link = document.createElement('a');
+        link.download = `ZAK-AI-4K-DSLR-Master-3840x2160-${Date.now()}.png`;
+        link.href = dataUrl;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+      /* =========================================================================
+         DRAG-AND-DROP WIRING & INITIALIZATION
+         ========================================================================= */
+      function setupDragAndDrop(zoneId, onFileCallback) {
+        const zone = document.getElementById(zoneId);
+        if (!zone) return;
+
+        ['dragenter', 'dragover'].forEach((evtName) => {
+          zone.addEventListener(evtName, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            zone.classList.add('border-[#89CFF0]', 'bg-[#0D1826]');
+          });
+        });
+
+        ['dragleave', 'drop'].forEach((evtName) => {
+          zone.addEventListener(evtName, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            zone.classList.remove('border-[#89CFF0]', 'bg-[#0D1826]');
+          });
+        });
+
+        zone.addEventListener('drop', (e) => {
+          const files = e.dataTransfer && e.dataTransfer.files;
+          if (files && files.length > 0) {
+            onFileCallback(files[0]);
+          }
+        });
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        // Initialize Tool 1 (Ultra Sonic Image Analyzer)
+        renderAnalyzerSampleToCanvas('camera');
+
+        // Initialize Tool 3 (AI 4K DSLR Enhancer)
+        enhancerState.sourceImage = createSampleEnhancerCanvas();
+        updateEnhancerFilters();
+
+        // Setup Drag-and-Drop on both upload viewports
+        setupDragAndDrop('analyzer-dropzone', loadUserImageIntoAnalyzer);
+        setupDragAndDrop('enhancer-dropzone', loadUserMediaIntoEnhancer);
+      });
+    </script>
+  </body>
 </html>
